@@ -1,2 +1,4 @@
 {"step":1,"event":"create_public_spec","note":"建立公開規格，不含私密本體。"}
 {"step":2,"event":"attach_locator_manifest_sha","note":"加入 Locator / Manifest / SHA256 / ReverseChain 範本。"}
+{"step":3,"event":"mint_capsule_body","note":"建立無副檔名膠囊本體（§7 格式），身分雜湊=8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014。"}
+{"step":4,"event":"attach_snapshot_and_06","note":"補快照與 06 唯一出口，凍結狀態=候選凍結。"}

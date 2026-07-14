@@ -5,13 +5,20 @@
   "private_core_included": false,
   "sovereign": "🥃老K",
   "identity_backref": "🥃LKMINI",
+  "capsule_body_file": "🧷幻影膠囊",
+  "capsule_identity_hash": "8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014",
+  "exit_06": "LOCATOR://PHANTOMWORLD/PUBLIC/PHANTOM_CAPSULE/06",
+  "freeze_state": "候選凍結",
+  "public_state": "可公開",
   "files": [
+    "🧷幻影膠囊",
     "README.md",
     "PublicSpec.md",
     "LocatorTemplate.json",
     "ManifestTemplate.json",
     "ReverseChainTemplate.jsonl",
     "DisplayFaceTemplate.html",
+    "快照.json",
     "LICENSE",
     "SHA256SUMS.txt"
   ]

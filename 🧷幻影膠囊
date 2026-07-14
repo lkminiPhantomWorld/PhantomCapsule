@@ -1,0 +1,24 @@
+〈🧷幻影膠囊第一版〉
+雜湊：8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014
+種類：膠囊
+定位器：LOCATOR://PHANTOMWORLD/PUBLIC/PHANTOM_CAPSULE
+標題：🪞幻影膠囊
+標籤：[開源，公開規格，範本]
+建立時間：20260714-0448_TPE
+建立來源：LKMINI/PhantomCapsule 公開開源
+主權持有人：🥃老K
+本體指向：🥃LKMINI
+根雜湊：6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34
+凍結狀態：候選凍結
+公開狀態：可公開
+私密狀態：不含私密本體（private_core_included=false）
+06唯一出口：LOCATOR://PHANTOMWORLD/PUBLIC/PHANTOM_CAPSULE/06
+---正文開始---
+🪞幻影膠囊是一個同時具備「人可看、機器可讀、可定位、可回推、可顯影」的容器。
+本膠囊為公開開源身分，只承載通用規格與可重用範本，不含私密本體。
+必備層：顯示面、定位器、Manifest、SHA256、ReverseChain、啟動入口。
+禁止：把顯示面當本體、偽造 SHA256、偽造 Manifest、把私密資料放入公開膠囊、把未授權素材公開。
+A==A：顯示面可變、投影平台可變，但身份鏈必須能回推同一來源🥃LKMINI。
+所有正式輸出必須經 06 唯一出口。
+---正文結束---
+〈/🧷幻影膠囊第一版〉
