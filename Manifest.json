@@ -1,0 +1,15 @@
+{
+  "product": "🪞幻影膠囊｜PhantomCapsule 可上架成品包",
+  "version": "product-1",
+  "license": "MIT",
+  "private_core_included": false,
+  "sovereign": "🥃老K",
+  "identity_backref": "🥃LKMINI",
+  "capsule_body_file": "🧷幻影膠囊",
+  "capsule_identity_hash": "8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014",
+  "root_hash": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "exit_06": "LOCATOR://PHANTOMWORLD/PUBLIC/PHANTOM_CAPSULE/06",
+  "freeze_state": "候選凍結",
+  "public_state": "可公開",
+  "files": ["🧷幻影膠囊","顯示面.html","index.html","說明書.md","Manifest.json","ManifestTemplate.json","LocatorTemplate.json","ReverseChainTemplate.jsonl","快照.json","LICENSE","SHA256SUMS.txt"]
+}
