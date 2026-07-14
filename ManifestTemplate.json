@@ -1,0 +1,18 @@
+{
+  "package": "🪞幻影膠囊開源包｜PhantomCapsuleOpenSource",
+  "version": "public-1",
+  "license": "MIT",
+  "private_core_included": false,
+  "sovereign": "🥃老K",
+  "identity_backref": "🥃LKMINI",
+  "files": [
+    "README.md",
+    "PublicSpec.md",
+    "LocatorTemplate.json",
+    "ManifestTemplate.json",
+    "ReverseChainTemplate.jsonl",
+    "DisplayFaceTemplate.html",
+    "LICENSE",
+    "SHA256SUMS.txt"
+  ]
+}
