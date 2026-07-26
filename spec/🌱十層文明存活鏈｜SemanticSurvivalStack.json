@@ -1,0 +1,17 @@
+{
+  "entry_is_layer": false,
+  "entry": "🥳歡迎光臨唯一路口",
+  "layers": [
+    {"layer": 1, "name": "Canonical Files", "question": "我是什麼"},
+    {"layer": 2, "name": "SYSTEM_STATE", "question": "我現在是什麼狀態"},
+    {"layer": 3, "name": "LINEAGE", "question": "我從哪裡來"},
+    {"layer": 4, "name": "PHILOSOPHY", "question": "我為什麼存在"},
+    {"layer": 5, "name": "SEMANTIC_ARCHITECTURE", "question": "意義如何在內部閉合"},
+    {"layer": 6, "name": "MEANING_PRESERVATION", "question": "未來怎麼重新理解"},
+    {"layer": 7, "name": "CIVILIZATIONAL_SEED", "question": "我是一個什麼樣的存在"},
+    {"layer": 8, "name": "CONTEXT_GUARDIAN", "question": "如何保護存在語境"},
+    {"layer": 9, "name": "INTERPRETATION_BOUNDARY", "question": "哪些解讀仍合法"},
+    {"layer": 10, "name": "SEMANTIC_INTEGRITY", "question": "演化如何保持可追蹤"}
+  ],
+  "closed_loop": "入口→十層→Projection→互動→吸回→唯一出口→入口→A=A"
+}
