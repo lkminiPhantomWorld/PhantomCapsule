@@ -1,0 +1,23 @@
+{
+  "🏷️正式名稱｜FormalName": "🫧可移動小球分類盤｜MovableDotBoard",
+  "🧬正式身分｜Identity": "🫧可移動小球分類盤｜MovableDotBoard",
+  "🧩唯一根節點｜RootNode": "🧩LKMINI",
+  "⚖️最高公理｜Axiom": "A=A",
+  "🗂️正式分類｜FormalClassification": "06_🎮主控台｜ControlConsole",
+  "📍GitHub座標｜GitHubLocator": "lkminiPhantomWorld/PhantomCapsule:master/06_🎮主控台｜ControlConsole/🫧可移動小球分類盤｜MovableDotBoard.html",
+  "🔐來源雜湊｜SourceSHA256": "f18f195e76797ce24647eec4ad22a412d2f3cc276b6184ceb7c2735d1164cc40",
+  "🔐Git物件雜湊｜GitBlobSHA": "0db723852ccb6d7caaadcec129f75aef7de8f1d2",
+  "🔙反向鏈｜ReverseChain": [
+    "🫧可移動小球分類盤｜MovableDotBoard.html",
+    "🧩互動分類盤顯影｜InteractiveBoardProjection",
+    "🫧可移動小球分類盤｜MovableDotBoard",
+    "🧩LKMINI"
+  ],
+  "📜來源保全｜SourcePreservation": "原始32795-byte來源維持既有來源紀錄；GitHub保存合法精簡Projection。",
+  "🚦狀態｜Status": "錯誤",
+  "🧩缺件｜MissingParts": [
+    "Drive正式HTML檔案ID",
+    "Drive與GitHub雙端Locator",
+    "ReverseChain實際還原測試"
+  ]
+}
