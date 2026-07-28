@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>🪄物件顯影卡模板｜ObjectProjectionCardTemplate</title>
+<style>
+:root{color-scheme:light dark;font-family:-apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif}body{margin:0;padding:18px;background:#f2f2f7;color:#111}.card{max-width:760px;margin:auto;background:#fff;border-radius:22px;padding:20px;box-shadow:0 12px 34px #0002}h1{font-size:25px;margin:0 0 8px}.purpose{font-size:16px;line-height:1.55;color:#444}.status{display:inline-block;margin:10px 0;padding:7px 11px;border-radius:999px;background:#e8fff0;font-weight:800}details{margin-top:16px;border:1px solid #ddd;border-radius:16px;padding:12px}summary{cursor:pointer;font-weight:900}.grid{display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:8px;margin-top:12px;font-size:14px}.k{font-weight:800;color:#555}.v{word-break:break-word}@media(prefers-color-scheme:dark){body{background:#090b12;color:#fff}.card{background:#171a24}.purpose,.k{color:#bbc1d2}details{border-color:#3a3f50}.status{background:#153b25}}
+</style>
+</head>
+<body>
+<article class="card" data-identity="{{IDENTITY}}">
+  <h1>{{EMOJI}}{{中文實際用途名稱}}｜{{EnglishKey}}</h1>
+  <p class="purpose">{{一句話用途}}</p>
+  <div class="status">{{完成或錯誤}}</div>
+  <details>
+    <summary>🧩內部動作與證據｜InternalActionsAndEvidence</summary>
+    <div class="grid">
+      <div class="k">🔢固定動作編號｜FixedActionIndex</div><div class="v">{{0-9}}</div>
+      <div class="k">⚙️固定動作角色｜FixedActionRole</div><div class="v">{{抽象動作}}</div>
+      <div class="k">📛來源原名｜SourceOriginalName</div><div class="v">{{來源原名}}</div>
+      <div class="k">📍來源座標｜SourceLocator</div><div class="v">{{來源座標}}</div>
+      <div class="k">🧬正式身分｜Identity</div><div class="v">{{IDENTITY}}</div>
+      <div class="k">🔗投影關係｜ProjectionRelationship</div><div class="v">{{Projection → Identity → 🧩LKMINI}}</div>
+      <div class="k">🗂️正式分類｜FormalClassification</div><div class="v">{{正式分類}}</div>
+      <div class="k">🔐當次雜湊｜CurrentSHA256</div><div class="v">{{SHA256}}</div>
+      <div class="k">🕰️雜湊歷史｜SHA256History</div><div class="v">{{歷史}}</div>
+      <div class="k">🧾總清單｜Manifest</div><div class="v">{{Manifest}}</div>
+      <div class="k">📍定位器｜Locator</div><div class="v">{{Locator}}</div>
+      <div class="k">📸快照｜Snapshot</div><div class="v">{{Snapshot}}</div>
+      <div class="k">🔙反向鏈｜ReverseChain</div><div class="v">{{ReverseChain}}</div>
+      <div class="k">🧾工具回執｜ToolReceipt</div><div class="v">{{ToolReceipt}}</div>
+    </div>
+  </details>
+</article>
+</body>
+</html>
