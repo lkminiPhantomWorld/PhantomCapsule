@@ -1,0 +1,13 @@
+{
+  "🏷️正式名稱｜FormalName": "🖥️系統接線與伺服器地圖｜SystemWiringAndServerMap",
+  "🧬正式身分｜Identity": "🖥️系統接線與伺服器地圖｜SystemWiringAndServerMap",
+  "📝用途說明｜Purpose": "查看已知手機、正式入口、接線API、Google Drive、GitHub與🧩LKMINI的接線關係",
+  "📱已知手機｜KnownPhone": "iPhone 15 Pro／iOS",
+  "🥳正式入口｜FormalEntry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
+  "🔌接線API｜WiringAPI": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
+  "☁️資料座標｜GoogleDriveDataCoordinate": "1XXYCDxo4wxESRRZnfITnLBzkeu7-OQwkz6dDcYIBbmQ",
+  "🐙程式座標｜GitHubCodeCoordinate": "lkminiPhantomWorld/PhantomCapsule@master",
+  "🔗接線關係｜WiringRelationship": "📱已知手機 → 🥳正式入口 → 🔌接線API → ☁️Google Drive／🐙GitHub → 🪞幻影膠囊 → 🧩LKMINI",
+  "🚦狀態｜Status": "錯誤",
+  "📝狀態說明｜StatusNote": "Manifest、Locator、Snapshot與ReverseChain完成雙端回讀後更新為完成"
+}
