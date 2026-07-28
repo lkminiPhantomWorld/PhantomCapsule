@@ -1,0 +1,10 @@
+{
+  "🏷️正式名稱｜FormalName": "📸系統接線快照｜SystemWiringSnapshot",
+  "🧬正式身分｜Identity": "🖥️系統接線與伺服器地圖｜SystemWiringAndServerMap",
+  "🕰️處理日期｜ProcessedDate": "2026-07-29",
+  "📱裝置｜Device": "iPhone 15 Pro／iOS",
+  "☁️資料座標｜DataCoordinate": "Google Drive總帳",
+  "🐙程式座標｜CodeCoordinate": "lkminiPhantomWorld/PhantomCapsule@master",
+  "🚦狀態｜Status": "錯誤",
+  "📝說明｜Note": "等待Locator、ReverseChain、Drive寫入與雙端回讀"
+}
