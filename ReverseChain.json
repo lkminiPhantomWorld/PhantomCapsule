@@ -1,0 +1,17 @@
+{
+  "name": "ReverseChain",
+  "purpose": "Public Phantom Capsule template lineage and restore reference chain",
+  "owner": "Kevin Yang / 老K",
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "A_EQUALS_A": true,
+  "chain": [
+    {
+      "version": "public_template_v0",
+      "date": "2026-08-01",
+      "source": "lkminiPhantomWorld/welcome PHANTOM_CAPSULE_FORMULA.md plus PhantomCapsule README.md",
+      "repo": "lkminiPhantomWorld/PhantomCapsule",
+      "note": "Public template six-condition scaffold. Private LKMINI core remains outside this repository.",
+      "A_EQUALS_A": true
+    }
+  ]
+}
