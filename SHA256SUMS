@@ -1,0 +1,12 @@
+# PhantomCapsule public template checksums
+# Repository: lkminiPhantomWorld/PhantomCapsule
+# Scope: public reusable template only; private core excluded.
+# Generated: 2026-08-01 Asia/Taipei
+# A_EQUALS_A=true
+
+e9d1dffe18808088835c06c7d5ac1581318b3131bc831f2fd935c60ace8f7134  README.md
+23ab8e81af8035d81a8a58cc00277246482422ae20f90cc3b204478309de10b1  MANIFEST.json
+811982fd7323e95b80ac4703f77251ca3aa01ae706d1eefb8d43ada6a726db6f  LOCATOR.json
+2769e00ab5b5cabed5231c3d94a10433c5d59c2b19e4f3d1b35ad67502e43bb1  SNAPSHOT.json
+774b58f7c94deda2dce1e60f103b2c808515826a87013179483e3e408bc46da0  ReverseChain.json
+6c38e8fa28dc3ed8eee494064da8d55fa7019131f1edbf1c42739cac43ee83fa  PACKAGE.md
