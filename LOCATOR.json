@@ -1,0 +1,14 @@
+{
+  "name": "PhantomCapsule",
+  "type": "public_capsule_locator",
+  "canonical_repository": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
+  "organization": "https://github.com/lkminiPhantomWorld",
+  "public_seed_repository": "https://github.com/lkminiPhantomWorld/welcome",
+  "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
+  "system_wires_api": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
+  "root_protocol": "LKMINI://",
+  "root_node": "🧩LKMINI",
+  "A_EQUALS_A": true,
+  "PRIVATE_CORE_INCLUDED": false,
+  "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded."
+}
