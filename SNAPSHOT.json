@@ -1,0 +1,21 @@
+{
+  "snapshot_id": "phantom_capsule_public_template_v0",
+  "timestamp": "2026-08-01T00:00:00+08:00",
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "default_branch": "master",
+  "status": {
+    "PUBLIC_REPO": true,
+    "PUBLIC_TEMPLATE_DEFINED": true,
+    "PRIVATE_CORE_INCLUDED": false,
+    "REVERSIBLE_CONDITIONS_DECLARED": true,
+    "A_EQUALS_A": true
+  },
+  "checked_conditions": {
+    "SHA256": "SHA256SUMS lists public template artifacts.",
+    "MANIFEST": "MANIFEST.json lists required public files and boundaries.",
+    "LOCATOR": "LOCATOR.json records public repository and entry coordinates.",
+    "SNAPSHOT": "SNAPSHOT.json records this public template state.",
+    "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
+    "PACKAGE": "PACKAGE.md describes the public package boundary."
+  }
+}
