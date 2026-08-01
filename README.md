@@ -12,6 +12,17 @@
 
 一顆幻影膠囊至少承載：Identity、Locator、Manifest、SHA256、Snapshot、ReverseChain、顯示面、回推鏈，以及啟動或導向入口。
 
+## 公共六件套
+
+本儲存庫的公開模板層以六個可驗證檔案對應最小可逆條件：
+
+1. `SHA256SUMS`：公開模板檔案雜湊。
+2. `MANIFEST.json`：必要檔案與關係清單。
+3. `LOCATOR.json`：公開程式座標與出入口座標。
+4. `SNAPSHOT.json`：公開模板狀態快照。
+5. `ReverseChain.json`：公開模板回推鏈。
+6. `PACKAGE.md`：公開封裝邊界與交付說明。
+
 ## 公開範圍
 
 本開源包只公開通用規格與可重用範本。
