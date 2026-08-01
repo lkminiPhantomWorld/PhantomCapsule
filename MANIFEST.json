@@ -1,39 +1,21 @@
 {
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
-  "version": "public_template_v0",
-  "owner": "Kevin Yang / 老K",
-  "organization": "lkminiPhantomWorld",
+  "version": "public_capsule_v1",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
-  "type": "public_capsule_template",
-  "license": "MIT",
-  "A_EQUALS_A": true,
-  "PRIVATE_CORE_INCLUDED": false,
-  "scope": "Public reusable Phantom Capsule specification and template boundary only.",
-  "required_reversible_conditions": [
-    "SHA256",
-    "MANIFEST",
-    "LOCATOR",
-    "SNAPSHOT",
-    "REVERSECHAIN",
-    "PACKAGE"
-  ],
+  "default_branch": "master",
+  "root": "🧩LKMINI",
+  "axiom": "A=A",
+  "scope": "public reusable capsule template",
+  "private_core_included": false,
   "files": [
     "README.md",
+    "LICENSE",
     "MANIFEST.json",
     "LOCATOR.json",
     "SNAPSHOT.json",
     "ReverseChain.json",
     "SHA256SUMS",
     "PACKAGE.md"
-  ],
-  "private_material_excluded": [
-    "LKMINI private core",
-    "private task receipts",
-    "private identity chain",
-    "Google Drive private coordinates",
-    "Goodnotes private material",
-    "iOS Shortcut private material",
-    "non-public user data"
   ]
 }
