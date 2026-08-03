@@ -34,7 +34,7 @@
     "checked_at": "2026-08-04T04:40:58+08:00",
     "site_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/",
     "api_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
-    "api_bytes": 17933,
+    "api_response_rule": "non-empty JSON response; exact byte count is volatile and not identity evidence",
     "site_access_mode": "public",
     "reason": "Kevin authorized public access. Fresh connector and anonymous HTTP readback confirm public site and API access. The previous 401 was an access policy state, not a system failure."
   },
