@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "lk_system_namespace_architecture_v3",
-  "timestamp": "2026-08-03T07:49:00+08:00",
+  "snapshot_id": "lk_system_namespace_architecture_v4",
+  "timestamp": "2026-08-03T08:07:00+08:00",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "status": {
@@ -12,17 +12,19 @@
     "ACTIONS_11_DOCUMENTED": true,
     "NAMESPACE_DECLARED": true,
     "FORMAL_NAMESPACE_LKSYSTEM": true,
-    "NAMESPACE_SELF_DESCRIPTION": true
+    "NAMESPACE_SELF_DESCRIPTION": true,
+    "PROTOCOL_DEFINED": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS lists public template artifacts.",
     "MANIFEST": "MANIFEST.json lists required public files and boundaries.",
     "LOCATOR": "LOCATOR.json records public repository and entry coordinates.",
     "NAMESPACE": "NAMESPACE.json declares the capsule namespace (xmlns: LKSystem://PhantomCapsule); capsule can self-describe its existence.",
+    "PROTOCOL": "PROTOCOL.json formally defines the LKSystem:// protocol scheme, URI table, and mapping rule.",
     "SNAPSHOT": "SNAPSHOT.json records this public template state.",
     "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
     "PACKAGE": "PACKAGE.md describes the public package boundary.",
     "ACTIONS": "11 actions are documented, including Search, and no tool name is promoted to a formal system action.",
-    "NAMESPACE_ARCH": "The LKSystem formal namespace architecture is documented across README.md, PACKAGE.md, MANIFEST.json, LOCATOR.json, and NAMESPACE.json."
+    "NAMESPACE_ARCH": "The LKSystem formal namespace architecture is documented across README.md, PACKAGE.md, MANIFEST.json, LOCATOR.json, NAMESPACE.json, and PROTOCOL.json."
   }
 }

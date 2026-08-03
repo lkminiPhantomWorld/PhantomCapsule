@@ -1,0 +1,57 @@
+{
+  "protocol": "LKSystem://",
+  "full_name": "LKSystem Protocol",
+  "owner": "Kevin Yang／老K",
+  "axiom": "A=A",
+
+  "scheme": "LKSystem",
+  "separator": "://",
+  "uri_format": "LKSystem://<Domain>[/<Name>]",
+
+  "description": "LKSystem:// 是幻影膠囊系統的自訂協議。如同 http:// 或 file:// 宣告存取方式，LKSystem:// 宣告本系統節點的定址方式。攜帶此協議的 URI 可唯一定位系統內的任何正式節點、容器、入口或出口。",
+
+  "uri_table": [
+    {
+      "uri": "LKSystem://",
+      "resolves_to": "唯一系統根",
+      "namespace_id": "LKSystem"
+    },
+    {
+      "uri": "LKSystem://LKMINI",
+      "resolves_to": "唯一根節點",
+      "namespace_id": "LKSystem.LKMINI"
+    },
+    {
+      "uri": "LKSystem://PhantomCapsule",
+      "resolves_to": "唯一正式容器（幻影膠囊）",
+      "namespace_id": "LKSystem.PhantomCapsule"
+    },
+    {
+      "uri": "LKSystem://Entry/Welcome",
+      "resolves_to": "唯一正式入口",
+      "namespace_id": "LKSystem.Entry.Welcome"
+    },
+    {
+      "uri": "LKSystem://Exit/RealDelivery",
+      "resolves_to": "唯一正式出口",
+      "namespace_id": "LKSystem.Exit.RealDelivery"
+    }
+  ],
+
+  "mapping_rule": "LKSystem.<Domain>.<Name>  ←→  LKSystem://<Domain>/<Name>",
+
+  "usage": {
+    "xmlns_declaration": "膠囊在 NAMESPACE.json 以 \"xmlns\": \"LKSystem://PhantomCapsule\" 宣告自身命名空間，即使用此協議進行身份定址。",
+    "locator_root": "LOCATOR.json 以 \"root_protocol\": \"LKSystem://\" 標示系統定址根，任何解析器從這裡開始解析節點位置。"
+  },
+
+  "rules": [
+    "LKSystem:// 是唯一合法協議前綴；不建立第二套協議。",
+    "協議只描述正式節點定址；工具名、平台名、臨時產物不得使用此協議前綴升格為系統節點。",
+    "URI 路徑與命名空間格式一一對應：點（.）換成斜線（/）。",
+    "A=A：任何 LKSystem:// URI 必須回推到同一 LKMINI 根。"
+  ],
+
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "PRIVATE_CORE_INCLUDED": false
+}

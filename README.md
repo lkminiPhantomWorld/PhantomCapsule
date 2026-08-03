@@ -20,17 +20,18 @@
 - 可互動的容器會隨支援的副檔功能增加而呈現得更完整。
 - 本公開包只描述通用解析邏輯，不包含私密或專屬格式能力。
 
-## 公共七件套
+## 公共八件套
 
-本儲存庫的公開模板層以七個可驗證檔案對應最小可逆條件：
+本儲存庫的公開模板層以八個可驗證檔案對應最小可逆條件：
 
 1. `SHA256SUMS`：公開模板檔案雜湊。
 2. `MANIFEST.json`：必要檔案與關係清單。
 3. `LOCATOR.json`：公開程式座標與出入口座標。
 4. `NAMESPACE.json`：膠囊命名空間宣告（自我解釋身份）。
-5. `SNAPSHOT.json`：公開模板狀態快照。
-6. `ReverseChain.json`：公開模板回推鏈。
-7. `PACKAGE.md`：公開封裝邊界與交付說明。
+5. `PROTOCOL.json`：`LKSystem://` 協議正式定義。
+6. `SNAPSHOT.json`：公開模板狀態快照。
+7. `ReverseChain.json`：公開模板回推鏈。
+8. `PACKAGE.md`：公開封裝邊界與交付說明。
 
 ## 命名空間
 
@@ -55,6 +56,22 @@
 ```
 
 膠囊不需要外部解釋者就能自我說明：它是什麼系統、根節點在哪、入口與出口為何。`NAMESPACE.json` 是膠囊自我解釋存在的依據。
+
+## 自訂協議（PROTOCOL.json）
+
+`LKSystem://` 是本系統的自訂協議，正式定義於 `PROTOCOL.json`。
+
+如同 `http://` 宣告超文本存取方式，`LKSystem://` 宣告本系統節點的定址方式：
+
+| URI | 對應節點 |
+|-----|---------|
+| `LKSystem://` | 唯一系統根 |
+| `LKSystem://LKMINI` | 唯一根節點 |
+| `LKSystem://PhantomCapsule` | 唯一正式容器 |
+| `LKSystem://Entry/Welcome` | 唯一正式入口 |
+| `LKSystem://Exit/RealDelivery` | 唯一正式出口 |
+
+對應規則：`LKSystem.<Domain>.<Name>` ←→ `LKSystem://<Domain>/<Name>`（點換斜線）。
 
 ## 固定十一動作
 

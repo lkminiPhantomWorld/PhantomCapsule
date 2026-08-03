@@ -1,7 +1,7 @@
 {
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
-  "version": "namespace_architecture_v2",
+  "version": "namespace_architecture_v3",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "root": "🧩LKMINI",
@@ -51,6 +51,7 @@
     "MANIFEST.json",
     "LOCATOR.json",
     "NAMESPACE.json",
+    "PROTOCOL.json",
     "SNAPSHOT.json",
     "ReverseChain.json",
     "SHA256SUMS",

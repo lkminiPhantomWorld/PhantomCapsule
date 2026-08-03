@@ -21,6 +21,14 @@
       "repo": "lkminiPhantomWorld/PhantomCapsule",
       "note": "NAMESPACE.json introduces xmlns: LKSystem://PhantomCapsule — the SVG xmlns analog for PhantomCapsule. A capsule carrying this file can explain its own existence without an external interpreter. Public template set updated from 六件套 to 七件套.",
       "A_EQUALS_A": true
+    },
+    {
+      "version": "lk_system_namespace_architecture_v4",
+      "date": "2026-08-03",
+      "source": "PROTOCOL.json added as formal LKSystem:// protocol definition",
+      "repo": "lkminiPhantomWorld/PhantomCapsule",
+      "note": "LKSystem:// is formally defined as the system's own protocol scheme. PROTOCOL.json declares the URI table (LKSystem://LKMINI, LKSystem://PhantomCapsule, LKSystem://Entry/Welcome, LKSystem://Exit/RealDelivery), the mapping rule (dot to slash), and usage rules. Public template set updated from 七件套 to 八件套.",
+      "A_EQUALS_A": true
     }
   ]
 }

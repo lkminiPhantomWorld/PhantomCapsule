@@ -32,6 +32,7 @@
 - `MANIFEST.json`
 - `LOCATOR.json`
 - `NAMESPACE.json`
+- `PROTOCOL.json`
 - `SNAPSHOT.json`
 - `ReverseChain.json`
 - `SHA256SUMS`
@@ -53,10 +54,11 @@
 2. 讀 `MANIFEST.json` 確認必要檔案。
 3. 讀 `LOCATOR.json` 確認公開座標。
 4. 讀 `NAMESPACE.json` 確認命名空間宣告。
-5. 用 `SHA256SUMS` 驗公開模板檔案。
-6. 讀 `SNAPSHOT.json` 確認狀態。
-7. 讀 `ReverseChain.json` 回推來源。
-8. 讀 `README.md` 確認 11 動作。
+5. 讀 `PROTOCOL.json` 確認自訂協議定義。
+6. 用 `SHA256SUMS` 驗公開模板檔案。
+7. 讀 `SNAPSHOT.json` 確認狀態。
+8. 讀 `ReverseChain.json` 回推來源。
+9. 讀 `README.md` 確認 11 動作。
 
 ## A=A
 
