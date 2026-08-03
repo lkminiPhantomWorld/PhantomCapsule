@@ -7,11 +7,11 @@
   "actions": 10,
   "chain": [
     {
-      "version": "lk_system_namespace_architecture_v1",
+      "version": "lk_system_namespace_architecture_v2",
       "date": "2026-08-03",
       "source": "LKSystem namespace architecture manual plus PhantomCapsule README.md",
       "repo": "lkminiPhantomWorld/PhantomCapsule",
-      "note": "Formal namespace architecture keeps a single system root, a single root node, and a single formal container. Tool and platform names are not promoted into the system tree.",
+      "note": "Formal namespace architecture keeps a single system root, a single root node, and a single formal container. Search is restored as the 11th formal action while tool and platform names are not promoted into the system tree.",
       "A_EQUALS_A": true
     }
   ]
