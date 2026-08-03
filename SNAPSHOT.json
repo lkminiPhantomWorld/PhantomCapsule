@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v1_1_20260803T190432+0800",
-  "timestamp": "2026-08-03T19:04:32+08:00",
+  "snapshot_id": "phantom_capsule_public_template_v1_2_20260804T044058+0800",
+  "timestamp": "2026-08-04T04:40:58+08:00",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
@@ -15,7 +15,10 @@
     "A_EQUALS_A": true,
     "CORE_MUTATION_BITS": 0,
     "ACTIONS_10_DOCUMENTED": true,
-    "VERIFIED_PROJECTION_CONNECTED": true
+    "VERIFIED_PROJECTION_CONNECTED": true,
+    "SITES_PUBLIC_ACCESS_READBACK": true,
+    "SYSTEM_WIRES_API_READBACK": true,
+    "OPTIONAL_PWA_ASSETS_PENDING": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS is rebuilt from the current bytes of seven public artifacts.",
@@ -26,11 +29,22 @@
     "PACKAGE": "PACKAGE.md describes the existing public boundary; no new download package was created."
   },
   "external_projection": {
-    "system_entry": "ACCESS_BOUNDARY",
-    "system_wires_api": "ACCESS_BOUNDARY",
-    "checked_at": "2026-08-03T19:04:32+08:00",
-    "reason": "Fresh web readback returned HTTP 401 Unauthorized for both Sites endpoints. This matches the configured access boundary; Sites remains an external projection and is not used as identity evidence."
+    "system_entry": "HTTP_200_PUBLIC",
+    "system_wires_api": "HTTP_200_PUBLIC_JSON",
+    "checked_at": "2026-08-04T04:40:58+08:00",
+    "site_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/",
+    "api_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
+    "api_bytes": 17933,
+    "site_access_mode": "public",
+    "reason": "Kevin authorized public access. Fresh connector and anonymous HTTP readback confirm public site and API access. The previous 401 was an access policy state, not a system failure."
   },
+  "non_identity_warnings": [
+    {
+      "path_group": "apple-touch-icon / favicon / manifest.webmanifest",
+      "status": "OPTIONAL_ASSET_404",
+      "meaning": "Browser PWA/icon convenience assets are missing. This does not break the LKMINI entry or /api/system-wires wiring."
+    }
+  ],
   "verified_projection": {
     "identity": "LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world",
     "repository": "ky46738-ops/LKMini.Public.tools",
