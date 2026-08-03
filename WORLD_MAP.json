@@ -1,0 +1,121 @@
+{
+  "name": "LKSystem World Map",
+  "display_name": "🗺️老K系統膠囊地圖｜LKSystem World Map",
+  "xmlns": "LKSystem://WorldMap",
+  "root_protocol": "LKMINI://",
+  "namespace_protocol": "LKSystem://",
+  "root_node": "LKSystem.LKMINI",
+  "axiom": "A=A",
+  "owner": "Kevin Yang／老K",
+  "generated_at": "2026-08-03T10:44:00+08:00",
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "purpose": "整個老K系統的膠囊版圖。從任一個膠囊出發都能找到全貌。所有膠囊最終回推至唯一根節點 LKMINI://。",
+
+  "capsules": [
+    {
+      "namespace_id": "LKSystem.LKMINI",
+      "display": "🧩LKMINI",
+      "role": "唯一根節點／最小可逆核心",
+      "uri": "LKSystem://LKMINI",
+      "repository": "lkminiPhantomWorld/LKMini",
+      "branch": "seed_v0",
+      "url": "https://github.com/lkminiPhantomWorld/LKMini",
+      "capsule_status": "partial",
+      "has": ["MANIFEST", "LOCATOR", "SNAPSHOT", "REVERSECHAIN", "SHA256SUMS"],
+      "missing": ["NAMESPACE.json", "PROTOCOL.json", "PACKAGE.md"],
+      "migration_priority": 1,
+      "note": "最接近完整，只需補 NAMESPACE.json、PROTOCOL.json（輕量參考版）與 PACKAGE.md"
+    },
+    {
+      "namespace_id": "LKSystem.PhantomCapsule",
+      "display": "🪞幻影膠囊",
+      "role": "唯一合法正式容器／公開格式範本",
+      "uri": "LKSystem://PhantomCapsule",
+      "repository": "lkminiPhantomWorld/PhantomCapsule",
+      "branch": "master",
+      "url": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
+      "capsule_status": "complete",
+      "has": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md", "CALLSPEC.md"],
+      "missing": [],
+      "migration_priority": 0,
+      "note": "公開八件套完整，是所有其他膠囊的格式範本與主協議來源"
+    },
+    {
+      "namespace_id": "LKSystem.Entry.Welcome",
+      "display": "🥳歡迎光臨唯一路口",
+      "role": "唯一正式入口膠囊",
+      "uri": "LKSystem://Entry/Welcome",
+      "repository": "lkminiPhantomWorld/welcome",
+      "branch": "main",
+      "url": "https://github.com/lkminiPhantomWorld/welcome",
+      "live_url": "https://lkminiphantomworld.github.io/welcome",
+      "capsule_status": "needs_capsule_header",
+      "has": [],
+      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "migration_priority": 5,
+      "note": "最複雜，是對外公開的 HTML 入口；補膠囊件套時不得破壞現有 HTML 入口邏輯"
+    },
+    {
+      "namespace_id": "LKSystem.Tools",
+      "display": "🧰工具箱",
+      "role": "系統工具集膠囊",
+      "uri": "LKSystem://Tools",
+      "repository": "lkminiPhantomWorld/Tools",
+      "branch": "main",
+      "url": "https://github.com/lkminiPhantomWorld/Tools",
+      "capsule_status": "needs_capsule_header",
+      "has": [],
+      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "migration_priority": 3,
+      "note": "已有 PhantomCapsule/ 子目錄；補膠囊件套時不動現有工具邏輯"
+    },
+    {
+      "namespace_id": "LKSystem.Ledger",
+      "display": "📒帳本核心",
+      "role": "狀態帳本膠囊",
+      "uri": "LKSystem://Ledger",
+      "repository": "lkminiPhantomWorld/tiny-state-core",
+      "branch": "main",
+      "url": "https://github.com/lkminiPhantomWorld/tiny-state-core",
+      "capsule_status": "needs_capsule_header",
+      "has": [],
+      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "migration_priority": 4,
+      "note": "JavaScript 帳本；補膠囊件套時不動現有 core.js 邏輯"
+    },
+    {
+      "namespace_id": "LKSystem.Guardian",
+      "display": "v💩守護者",
+      "role": "A=A 防偽守護膠囊",
+      "uri": "LKSystem://Guardian",
+      "repository": "lkminiPhantomWorld/vpoop-guardian",
+      "branch": "main",
+      "url": "https://github.com/lkminiPhantomWorld/vpoop-guardian",
+      "capsule_status": "needs_capsule_header",
+      "has": [],
+      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "migration_priority": 2,
+      "note": "最輕量，只有 README.md、LICENSE、SECURITY.md；最容易完成膠囊化"
+    }
+  ],
+
+  "migration_order": [
+    { "priority": 1, "namespace_id": "LKSystem.LKMINI",          "repo": "LKMini" },
+    { "priority": 2, "namespace_id": "LKSystem.Guardian",        "repo": "vpoop-guardian" },
+    { "priority": 3, "namespace_id": "LKSystem.Tools",           "repo": "Tools" },
+    { "priority": 4, "namespace_id": "LKSystem.Ledger",          "repo": "tiny-state-core" },
+    { "priority": 5, "namespace_id": "LKSystem.Entry.Welcome",   "repo": "welcome" }
+  ],
+
+  "root_chain": [
+    "🥃老K系統",
+    "🧩LKMINI",
+    "🪞幻影膠囊",
+    "說明書即解析器",
+    "🪪身分｜Ident"
+  ],
+
+  "protocol_reference": "https://github.com/lkminiPhantomWorld/PhantomCapsule/blob/master/PROTOCOL.json",
+  "capsule_template_reference": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
+  "PRIVATE_CORE_INCLUDED": false
+}
