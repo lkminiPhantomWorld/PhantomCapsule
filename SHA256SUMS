@@ -1,13 +1,13 @@
 # PhantomCapsule public template checksums
 # Repository: lkminiPhantomWorld/PhantomCapsule
 # Scope: public reusable template only; private core excluded.
-# Generated: 2026-08-01 Asia/Taipei
+# Generated: 2026-08-03 Asia/Taipei
 # A_EQUALS_A=true
 
-f6d0671b6b1a646ce60f38522d193b0e7dd8c93e27cfaa4d696757b6654ccb31  README.md
+8d4775847815508ceebbd98cfbedbfa2ccdbe6892985ead1a56b51694478381c  README.md
 10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067  LICENSE
-cc84001ffbdd31a1d858c8e57951dbdb97ffb10d6021cbcc7faad41e9e100c71  MANIFEST.json
+61111381be62e93b8a96acca129068da7ac478c39ee132538bcf82ab55ed28e1  MANIFEST.json
 f7ede8bf7dae11ac068288b6c2090f2c786e4dc45be97d51be5a6ed001923bd9  LOCATOR.json
-d9755647827932b33a4f05f050c0a799c3b3b35a260be59de416314bbeb3e2e0  SNAPSHOT.json
+7d5ecc52f89b43e7ef1a05fd8993afea0c2ac767c20ec76a975c6e9a20bdf349  SNAPSHOT.json
 9e93ae19a1ec6700251cf73fb6aae7d9cf4dc62131fbda6e5dc6d1f6854a0043  ReverseChain.json
-2d68971b9cec85da944b6618976a9201210009c9dbc53e564e9ec2f218d0f58c  PACKAGE.md
+5e2538162c1030a2ec47f45cde784bb073efb8df34cc87b759c9543701856391  PACKAGE.md

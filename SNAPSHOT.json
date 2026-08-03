@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v0",
-  "timestamp": "2026-08-01T00:00:00+08:00",
+  "snapshot_id": "phantom_capsule_public_template_v1",
+  "timestamp": "2026-08-03T00:00:00+08:00",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "status": {
