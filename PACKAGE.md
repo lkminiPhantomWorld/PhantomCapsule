@@ -18,6 +18,7 @@
 ## 本公開包包含
 
 - `README.md`
+- `LICENSE`
 - `MANIFEST.json`
 - `LOCATOR.json`
 - `SNAPSHOT.json`
