@@ -1,7 +1,7 @@
 {
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
-  "version": "public_capsule_v1",
+  "version": "public_capsule_v1.1",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
@@ -27,12 +27,44 @@
     "LOCATOR.json": "records the active Branch→Path coordinates",
     "SNAPSHOT.json": "records the verified current state",
     "ReverseChain.json": "records the return chain to 🧩LKMINI and A=A",
-    "PACKAGE.md": "describes the public package boundary without creating a download bundle"
+    "PACKAGE.md": "describes the public package boundary without creating a download bundle",
+    "verified_projection_record": "connects the verified ExtremeContainerWorld record to the same 🧩LKMINI identity"
   },
   "verification": {
-    "verified_at": "2026-08-03T16:56:39+08:00",
+    "verified_at": "2026-08-03T19:04:32+08:00",
     "source_bytes_obtained": true,
     "same_repository_branch_path": true,
-    "core_mutation_bits": 0
+    "core_mutation_bits": 0,
+    "projection_record_readback": true
+  },
+  "action_standard": {
+    "count": 10,
+    "actions": [
+      "Read",
+      "Activate",
+      "Mount",
+      "Verify",
+      "Update",
+      "Broadcast",
+      "Fusion",
+      "Snapshot",
+      "Sync",
+      "ReversibleLoop"
+    ]
+  },
+  "verified_projection": {
+    "identity": "LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world",
+    "repository": "ky46738-ops/LKMini.Public.tools",
+    "branch": "main",
+    "path": "🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml",
+    "record_blob_sha": "d3fa2afbabc0db663f816528ce780bfeaa7843ef",
+    "content_sha256": "13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a",
+    "projections": [
+      "WebArchive",
+      "WACZ",
+      "PDF"
+    ],
+    "root": "🧩LKMINI",
+    "axiom": "A=A"
   }
 }
