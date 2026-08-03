@@ -1,23 +1,32 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v0",
-  "timestamp": "2026-08-01T00:00:00+08:00",
+  "snapshot_id": "phantom_capsule_public_template_v1_20260803T161111+0800",
+  "timestamp": "2026-08-03T16:11:11+08:00",
+  "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "status": {
     "PUBLIC_REPO": true,
     "PUBLIC_TEMPLATE_DEFINED": true,
     "PRIVATE_CORE_INCLUDED": false,
+    "SOURCE_BYTES_OBTAINED": true,
+    "SOURCE_ARTIFACTS_VERIFIED": "7/7",
+    "SHA256SUMS_STATUS": "REAL",
     "REVERSIBLE_CONDITIONS_DECLARED": true,
     "A_EQUALS_A": true,
-    "ACTIONS_11_DOCUMENTED": true
+    "ACTIONS_11_DOCUMENTED": true,
+    "CORE_MUTATION_BITS": 0
   },
   "checked_conditions": {
-    "SHA256": "SHA256SUMS lists public template artifacts.",
-    "MANIFEST": "MANIFEST.json lists required public files and boundaries.",
-    "LOCATOR": "LOCATOR.json records public repository and entry coordinates.",
-    "SNAPSHOT": "SNAPSHOT.json records this public template state.",
-    "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
-    "PACKAGE": "PACKAGE.md describes the public package boundary.",
-    "ACTIONS": "11 actions are documented, including Search."
+    "SHA256": "SHA256SUMS is rebuilt from the current bytes of seven public artifacts.",
+    "MANIFEST": "MANIFEST.json declares required public files and their relationships.",
+    "LOCATOR": "LOCATOR.json records the active repository, branch and paths.",
+    "SNAPSHOT": "SNAPSHOT.json records this verified public projection state.",
+    "REVERSECHAIN": "ReverseChain.json records the return path to 🪞幻影膠囊, 🧩LKMINI and A=A.",
+    "PACKAGE": "PACKAGE.md describes the existing public boundary; no new download package was created."
+  },
+  "external_projection": {
+    "system_entry": "ERROR",
+    "system_wires_api": "ERROR",
+    "reason": "The current tools could not resolve or fetch the Sites endpoints; they are not used as identity evidence."
   }
 }
