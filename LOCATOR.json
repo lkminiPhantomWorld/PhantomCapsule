@@ -18,14 +18,23 @@
   },
   "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
   "system_wires_api": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
-  "system_entry_role": "public projection only; GitHub Branch→Path is the identity evidence",
+  "system_entry_role": "public projection and AI/tool read entry; GitHub Branch-Path remains package identity evidence",
+  "site_public_readback": {
+    "checked_at": "2026-08-04T04:40:58+08:00",
+    "access_mode": "public",
+    "site_http_status": 200,
+    "api_http_status": 200,
+    "api_content_type": "application/json",
+    "api_bytes": 17933,
+    "worker_errors": "none_for_main_entry_and_api"
+  },
   "root_protocol": "LKMINI://",
   "root_node": "🧩LKMINI",
   "container": "🪞幻影膠囊",
   "A_EQUALS_A": true,
   "PRIVATE_CORE_INCLUDED": false,
   "readback_rule": "The same repository, branch and path must be read back after every write.",
-  "verified_at": "2026-08-03T19:04:32+08:00",
+  "verified_at": "2026-08-04T04:40:58+08:00",
   "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded.",
   "verified_projection_records": {
     "ExtremeContainerWorld": {
