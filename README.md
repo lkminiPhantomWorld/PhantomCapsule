@@ -31,7 +31,7 @@
 5. `ReverseChain.json`：公開模板回推鏈。
 6. `PACKAGE.md`：公開封裝邊界與交付說明。
 
-## 十一動作
+## 十動作
 
 1. 讀取 Read
 2. 啟動 Activate
@@ -43,7 +43,16 @@
 8. 快照 Snapshot
 9. 同步 Sync
 10. 可逆循環 ReversibleLoop
-11. 收尋 / 搜尋 Search
+
+
+## 已驗證 Projection 接線
+
+- Identity：`LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world`
+- 程式座標：`ky46738-ops/LKMini.Public.tools@main:🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml`
+- 記錄 Git Blob：`d3fa2afbabc0db663f816528ce780bfeaa7843ef`
+- 正式內容 SHA256：`13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a`
+- Projection：WebArchive／WACZ／PDF
+- 回推：Projection → 🪞幻影膠囊 → 🧩LKMINI → A=A
 
 ## 公開範圍
 
