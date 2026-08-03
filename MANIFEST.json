@@ -2,9 +2,12 @@
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
   "version": "public_capsule_v1",
+  "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
+  "control_path": "/",
   "root": "🧩LKMINI",
+  "container": "🪞幻影膠囊",
   "axiom": "A=A",
   "scope": "public reusable capsule template",
   "private_core_included": false,
@@ -17,5 +20,19 @@
     "ReverseChain.json",
     "SHA256SUMS",
     "PACKAGE.md"
-  ]
+  ],
+  "relations": {
+    "SHA256SUMS": "verifies the seven listed public artifacts other than SHA256SUMS itself",
+    "MANIFEST.json": "declares required artifacts and relationships",
+    "LOCATOR.json": "records the active Branch→Path coordinates",
+    "SNAPSHOT.json": "records the verified current state",
+    "ReverseChain.json": "records the return chain to 🧩LKMINI and A=A",
+    "PACKAGE.md": "describes the public package boundary without creating a download bundle"
+  },
+  "verification": {
+    "verified_at": "2026-08-03T16:11:11+08:00",
+    "source_bytes_obtained": true,
+    "same_repository_branch_path": true,
+    "core_mutation_bits": 0
+  }
 }
