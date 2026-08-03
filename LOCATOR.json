@@ -13,7 +13,8 @@
     "LOCATOR": "LOCATOR.json",
     "SHA256SUMS": "SHA256SUMS",
     "SNAPSHOT": "SNAPSHOT.json",
-    "REVERSECHAIN": "ReverseChain.json"
+    "REVERSECHAIN": "ReverseChain.json",
+    "PACKAGE": "PACKAGE.md"
   },
   "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
   "system_wires_api": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
@@ -24,6 +25,17 @@
   "A_EQUALS_A": true,
   "PRIVATE_CORE_INCLUDED": false,
   "readback_rule": "The same repository, branch and path must be read back after every write.",
-  "verified_at": "2026-08-03T16:56:39+08:00",
-  "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded."
+  "verified_at": "2026-08-03T19:04:32+08:00",
+  "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded.",
+  "verified_projection_records": {
+    "ExtremeContainerWorld": {
+      "repository": "ky46738-ops/LKMini.Public.tools",
+      "branch": "main",
+      "path": "🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml",
+      "record_blob_sha": "d3fa2afbabc0db663f816528ce780bfeaa7843ef",
+      "content_sha256": "13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a",
+      "return_to": "🧩LKMINI",
+      "axiom": "A=A"
+    }
+  }
 }
