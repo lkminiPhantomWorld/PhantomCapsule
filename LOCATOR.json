@@ -1,14 +1,29 @@
 {
   "name": "PhantomCapsule",
   "type": "public_capsule_locator",
+  "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "default_branch": "master",
+  "control_path": "/",
   "canonical_repository": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
   "organization": "https://github.com/lkminiPhantomWorld",
   "public_seed_repository": "https://github.com/lkminiPhantomWorld/welcome",
+  "object_paths": {
+    "MANIFEST": "MANIFEST.json",
+    "LOCATOR": "LOCATOR.json",
+    "SHA256SUMS": "SHA256SUMS",
+    "SNAPSHOT": "SNAPSHOT.json",
+    "REVERSECHAIN": "ReverseChain.json"
+  },
   "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
   "system_wires_api": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
+  "system_entry_role": "public projection only; GitHub Branch→Path is the identity evidence",
   "root_protocol": "LKMINI://",
   "root_node": "🧩LKMINI",
+  "container": "🪞幻影膠囊",
   "A_EQUALS_A": true,
   "PRIVATE_CORE_INCLUDED": false,
+  "readback_rule": "The same repository, branch and path must be read back after every write.",
+  "verified_at": "2026-08-03T16:11:11+08:00",
   "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded."
 }
