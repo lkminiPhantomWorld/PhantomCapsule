@@ -24,12 +24,14 @@
 - 標準格式：`LKSystem.<Domain>.<Name>`
 - 膠囊本體可維持無副檔名；命名空間只描述正式身份，不等於程式本身
 - 對外輸出時只使用正式命名空間；不得把工具名、平台名或臨時產物升格成新系統
+- `NAMESPACE.json` 是膠囊命名空間宣告檔；膠囊攜帶此檔即可自我解釋其存在（`xmlns: LKSystem://PhantomCapsule`）
 
 ## 本公開包包含
 
 - `README.md`
 - `MANIFEST.json`
 - `LOCATOR.json`
+- `NAMESPACE.json`
 - `SNAPSHOT.json`
 - `ReverseChain.json`
 - `SHA256SUMS`
@@ -50,10 +52,11 @@
 1. 讀 `README.md` 確認公開邊界。
 2. 讀 `MANIFEST.json` 確認必要檔案。
 3. 讀 `LOCATOR.json` 確認公開座標。
-4. 用 `SHA256SUMS` 驗公開模板檔案。
-5. 讀 `SNAPSHOT.json` 確認狀態。
-6. 讀 `ReverseChain.json` 回推來源。
-7. 讀 `README.md` 確認 11 動作。
+4. 讀 `NAMESPACE.json` 確認命名空間宣告。
+5. 用 `SHA256SUMS` 驗公開模板檔案。
+6. 讀 `SNAPSHOT.json` 確認狀態。
+7. 讀 `ReverseChain.json` 回推來源。
+8. 讀 `README.md` 確認 11 動作。
 
 ## A=A
 

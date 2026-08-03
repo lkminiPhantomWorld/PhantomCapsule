@@ -4,7 +4,7 @@
   "owner": "Kevin Yang / 老K",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "A_EQUALS_A": true,
-  "actions": 10,
+  "actions": 11,
   "chain": [
     {
       "version": "lk_system_namespace_architecture_v2",
@@ -12,6 +12,14 @@
       "source": "LKSystem namespace architecture manual plus PhantomCapsule README.md",
       "repo": "lkminiPhantomWorld/PhantomCapsule",
       "note": "Formal namespace architecture keeps a single system root, a single root node, and a single formal container. Search is restored as the 11th formal action while tool and platform names are not promoted into the system tree.",
+      "A_EQUALS_A": true
+    },
+    {
+      "version": "lk_system_namespace_architecture_v3",
+      "date": "2026-08-03",
+      "source": "NAMESPACE.json added as capsule self-describing namespace declaration",
+      "repo": "lkminiPhantomWorld/PhantomCapsule",
+      "note": "NAMESPACE.json introduces xmlns: LKSystem://PhantomCapsule — the SVG xmlns analog for PhantomCapsule. A capsule carrying this file can explain its own existence without an external interpreter. Public template set updated from 六件套 to 七件套.",
       "A_EQUALS_A": true
     }
   ]
