@@ -2,14 +2,14 @@
 # Repository: lkminiPhantomWorld/PhantomCapsule
 # Branch: master
 # Identity: LKMINI://lkminiPhantomWorld/PhantomCapsule@master
-# Rebuilt: 2026-08-03T16:56:39+08:00
+# Rebuilt: 2026-08-03T19:04:32+08:00
 # Scope: public reusable template only; private core excluded.
 # A_EQUALS_A=true
 
-f6d0671b6b1a646ce60f38522d193b0e7dd8c93e27cfaa4d696757b6654ccb31  README.md
+a6029a15fd15ef33a734ca640b4b9c0a6d2a5c0d09e6b23d8867241b049e1528  README.md
 10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067  LICENSE
-83318cd36f16b6911a1c0c37b82ce6f58eb19fd744cc2610fb6a2dd2b7f561a8  MANIFEST.json
-2cbd3b53550c57ed23edc46f03886a2ae3f567ef0c8c90a5cb722218658bf7a6  LOCATOR.json
-e739eeedb53a399526cf46a8137040d0f294062c83d5c15053071fb86ebb368b  SNAPSHOT.json
-7250ef05dc4878ffaa36f09f61d675ab231226707ea2d9a4801c4e3b623f8e6e  ReverseChain.json
-d38d1683caf157f1b62a7645c804977833ae91457c2b971a7f200e68521fc440  PACKAGE.md
+e9b94220d56420f5b9d3726bdac8384fba56ff6e4b40e275ff34a9b7e920d2a6  MANIFEST.json
+f6f71c3858e8a45c621fda3322a538bbc56456e8d8aac311cdf26a27844a7f51  LOCATOR.json
+5a1e39663dda74a29b33c7f188d0ae54f72d29715a6a95368723d10505a5b58e  SNAPSHOT.json
+e66e3d21b802fe503ead62addd04d04bc6af2ef608c33d186cddcd4b81c84512  ReverseChain.json
+a98f2e6f2ec0e6b2b1ac8a03fb4f3eaf04577b3faa85915e4854b54f23c2c7b6  PACKAGE.md
