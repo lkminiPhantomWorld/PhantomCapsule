@@ -9,6 +9,12 @@
 - Axiom: A=A
 - Private core included: false
 
+## 視角定義
+
+- 出口逆向：幻影膠囊的輸出/回推視角
+- 動作數：11
+- 新增動作：收尋 / 搜尋 Search
+
 ## 本公開包包含
 
 - `README.md`
@@ -37,6 +43,7 @@
 4. 用 `SHA256SUMS` 驗公開模板檔案。
 5. 讀 `SNAPSHOT.json` 確認狀態。
 6. 讀 `ReverseChain.json` 回推來源。
+7. 讀 `README.md` 確認 11 動作與 Search。
 
 ## A=A
 
