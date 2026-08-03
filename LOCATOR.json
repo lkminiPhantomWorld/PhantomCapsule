@@ -9,7 +9,7 @@
   "root_protocol": "LKMINI://",
   "namespace_protocol": "LKSystem://",
   "root_node": "🧩LKMINI",
-  "lkmini_metadata_sha256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "lkmini_metadata_sha256": "f6254dc365b33b8c17dd91b6c4133c7d24f147a2bb3b903773be68b5c95bffc6",
   "formal_namespace": "LKSystem",
   "formal_entry": "LKSystem.Entry.Welcome",
   "formal_container": "LKSystem.PhantomCapsule",

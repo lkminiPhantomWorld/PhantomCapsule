@@ -37,6 +37,14 @@
       "repo": "lkminiPhantomWorld/PhantomCapsule",
       "note": "Correction: LKMINI:// is the 唯一正式根協議 (formal root protocol); LKSystem:// is the 命名空間定址協議 (namespace addressing protocol). PROTOCOL.json updated to define both. LOCATOR.json and NAMESPACE.json updated with root_protocol=LKMINI://, lkmini_metadata_sha256=6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34. Root chain completed with 🪪身分｜Ident as final node.",
       "A_EQUALS_A": true
+    },
+    {
+      "version": "lk_system_namespace_architecture_v6",
+      "date": "2026-08-03",
+      "source": "LKMINI.svg — 新向量本體，取代舊根錨點",
+      "repo": "lkminiPhantomWorld/PhantomCapsule",
+      "note": "LKMINI 本體替換為 SVG 向量形式（LKMINI.svg）。新 lkmini_metadata_sha256=f6254dc365b33b8c17dd91b6c4133c7d24f147a2bb3b903773be68b5c95bffc6。LOCATOR.json 與 NAMESPACE.json 同步更新錨點值。A=A 維持：所有節點回推至新本體。",
+      "A_EQUALS_A": true
     }
   ]
 }
