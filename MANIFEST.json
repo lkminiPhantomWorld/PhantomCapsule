@@ -8,6 +8,31 @@
   "axiom": "A=A",
   "scope": "public reusable capsule template",
   "private_core_included": false,
+  "namespace": {
+    "root": "LKMINI::PhantomCapsule",
+    "format": "LKMINI::PhantomCapsule::<Layer>::<Name>",
+    "extensionless_capsule": true,
+    "namespace_is_program": false,
+    "layers": [
+      {
+        "name": "Core",
+        "purpose": "Identity, coordinates, and immutable rules"
+      },
+      {
+        "name": "Public",
+        "purpose": "Public template and shareable content"
+      },
+      {
+        "name": "Reverse",
+        "purpose": "ReverseChain and lineage tracing"
+      },
+      {
+        "name": "Display",
+        "purpose": "Presentation and projection rules"
+      }
+    ],
+    "applies_to": ["code", "json", "docs"]
+  },
   "files": [
     "README.md",
     "LICENSE",

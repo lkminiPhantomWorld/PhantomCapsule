@@ -9,7 +9,8 @@
     "PRIVATE_CORE_INCLUDED": false,
     "REVERSIBLE_CONDITIONS_DECLARED": true,
     "A_EQUALS_A": true,
-    "ACTIONS_11_DOCUMENTED": true
+    "ACTIONS_11_DOCUMENTED": true,
+    "NAMESPACE_DECLARED": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS lists public template artifacts.",
@@ -18,6 +19,7 @@
     "SNAPSHOT": "SNAPSHOT.json records this public template state.",
     "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
     "PACKAGE": "PACKAGE.md describes the public package boundary.",
-    "ACTIONS": "11 actions are documented, including Search."
+    "ACTIONS": "11 actions are documented, including Search.",
+    "NAMESPACE": "The PhantomCapsule namespace convention is documented across README.md, PACKAGE.md, and MANIFEST.json."
   }
 }

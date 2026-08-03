@@ -15,6 +15,18 @@
 - 動作數：11
 - 新增動作：收尋 / 搜尋 Search
 
+## 命名空間規則
+
+- 固定根前綴：`LKMINI::PhantomCapsule`
+- 標準格式：`LKMINI::PhantomCapsule::<Layer>::<Name>`
+- 膠囊本體可維持無副檔名；命名空間只描述身份與層級，不等於程式本身
+- 分層定義：
+  - `Core`：身份、座標、規格與不可變條件
+  - `Public`：公開模板與可分享內容
+  - `Reverse`：ReverseChain 與來源追溯
+  - `Display`：介面投影與呈現規則
+- 對外輸出時只使用公開分層；私密層級不得寫入本公開包
+
 ## 本公開包包含
 
 - `README.md`
