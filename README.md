@@ -6,11 +6,19 @@
 
 ## 這是什麼
 
+出口逆向在這裡視為幻影膠囊的輸出/回推視角。
+
 幻影膠囊是一種可視化容器。
 
 它不是單純圖片、普通 ZIP 或只有圖示的捷徑。
 
 一顆幻影膠囊至少承載：Identity、Locator、Manifest、SHA256、Snapshot、ReverseChain、顯示面、回推鏈，以及啟動或導向入口。
+
+## 解析器
+
+- 解析器負責依副檔名與檔案型別決定顯示方式。
+- 可互動的容器會隨支援的副檔功能增加而呈現得更完整。
+- 本公開包只描述通用解析邏輯，不包含私密或專屬格式能力。
 
 ## 公共六件套
 
@@ -22,6 +30,20 @@
 4. `SNAPSHOT.json`：公開模板狀態快照。
 5. `ReverseChain.json`：公開模板回推鏈。
 6. `PACKAGE.md`：公開封裝邊界與交付說明。
+
+## 十一動作
+
+1. 讀取 Read
+2. 啟動 Activate
+3. 掛載 Mount
+4. 驗證 Verify
+5. 更新 Update
+6. 廣播 Broadcast
+7. 融合 Fusion
+8. 快照 Snapshot
+9. 同步 Sync
+10. 可逆循環 ReversibleLoop
+11. 收尋 / 搜尋 Search
 
 ## 公開範圍
 
