@@ -24,6 +24,6 @@
   "A_EQUALS_A": true,
   "PRIVATE_CORE_INCLUDED": false,
   "readback_rule": "The same repository, branch and path must be read back after every write.",
-  "verified_at": "2026-08-03T16:11:11+08:00",
+  "verified_at": "2026-08-03T16:56:39+08:00",
   "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded."
 }
