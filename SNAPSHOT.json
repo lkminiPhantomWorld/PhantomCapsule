@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v1_20260803T161111+0800",
-  "timestamp": "2026-08-03T16:11:11+08:00",
+  "snapshot_id": "phantom_capsule_public_template_v1_20260803T165639+0800",
+  "timestamp": "2026-08-03T16:56:39+08:00",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
@@ -27,6 +27,7 @@
   "external_projection": {
     "system_entry": "ERROR",
     "system_wires_api": "ERROR",
-    "reason": "The current tools could not resolve or fetch the Sites endpoints; they are not used as identity evidence."
+    "checked_at": "2026-08-03T16:56:39+08:00",
+    "reason": "The current web fetch returned Cache miss for both Sites endpoints; they remain external projections and are not used as identity evidence."
   }
 }
