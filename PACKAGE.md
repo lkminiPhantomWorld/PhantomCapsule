@@ -12,8 +12,8 @@
 ## 視角定義
 
 - 出口逆向：幻影膠囊的輸出/回推視角
-- 動作數：11
-- 新增動作：收尋 / 搜尋 Search
+- 動作數：10
+- 動作標準：Read／Activate／Mount／Verify／Update／Broadcast／Fusion／Snapshot／Sync／ReversibleLoop
 
 ## 本公開包包含
 
@@ -25,6 +25,16 @@
 - `ReverseChain.json`
 - `SHA256SUMS`
 - `PACKAGE.md`
+
+
+## 已驗證 Projection
+
+- Identity：`LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world`
+- 程式座標：`ky46738-ops/LKMini.Public.tools@main:🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml`
+- 記錄 Git Blob：`d3fa2afbabc0db663f816528ce780bfeaa7843ef`
+- 正式內容 SHA256：`13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a`
+- 容器：WebArchive／WACZ／PDF
+- 回指：🪞幻影膠囊 → 🧩LKMINI → A=A
 
 ## 本公開包排除
 
@@ -44,7 +54,8 @@
 4. 用 `SHA256SUMS` 驗公開模板檔案。
 5. 讀 `SNAPSHOT.json` 確認狀態。
 6. 讀 `ReverseChain.json` 回推來源。
-7. 讀 `README.md` 確認 11 動作與 Search。
+7. 讀 `README.md` 確認十動作。
+8. 讀已驗證 Projection 記錄並核對正式 CONTENT_SHA256。
 
 ## A=A
 
