@@ -25,7 +25,7 @@
     "site_http_status": 200,
     "api_http_status": 200,
     "api_content_type": "application/json",
-    "api_bytes": 17933,
+    "api_response_rule": "non-empty JSON response; exact byte count is volatile and not identity evidence",
     "worker_errors": "none_for_main_entry_and_api"
   },
   "root_protocol": "LKMINI://",
