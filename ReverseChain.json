@@ -32,6 +32,24 @@
         "A=A"
       ],
       "A_EQUALS_A": true
+    },
+    {
+      "version": "public_capsule_v1_checksum_repair",
+      "timestamp": "2026-08-03T16:56:39+08:00",
+      "source": "Actual README.md bytes and existing control files read from lkminiPhantomWorld/PhantomCapsule@master",
+      "repair": "Corrected SHA256SUMS from the invalid README.md checksum 908bdc... to the verified current checksum f6d067...; refreshed the existing control chain in place and read it back.",
+      "source_artifacts_verified": "7/7",
+      "external_projection_status": "ERROR: Sites endpoints returned Cache miss and were excluded from identity evidence.",
+      "core_mutation_bits": 0,
+      "reverse_path": [
+        "Public artifacts",
+        "SHA256SUMS",
+        "MANIFEST.json / LOCATOR.json / SNAPSHOT.json / ReverseChain.json",
+        "🪞幻影膠囊",
+        "🧩LKMINI",
+        "A=A"
+      ],
+      "A_EQUALS_A": true
     }
   ]
 }
