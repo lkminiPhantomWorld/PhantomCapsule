@@ -57,6 +57,8 @@
     "SHA256SUMS",
     "PACKAGE.md",
     "LKMINI.svg",
-    "CALLSPEC.md"
+    "CALLSPEC.md",
+    "WORLD_MAP.json",
+    "CAPSULE_MIGRATION.md"
   ]
 }

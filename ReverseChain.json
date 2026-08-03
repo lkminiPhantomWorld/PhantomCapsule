@@ -39,11 +39,11 @@
       "A_EQUALS_A": true
     },
     {
-      "version": "lk_system_namespace_architecture_v6",
+      "version": "lk_system_world_capsule_migration_v7",
       "date": "2026-08-03",
-      "source": "LKMINI.svg — 新向量本體，取代舊根錨點",
+      "source": "System-wide capsule migration — all repos mapped and migration guide created",
       "repo": "lkminiPhantomWorld/PhantomCapsule",
-      "note": "LKMINI 本體替換為 SVG 向量形式（LKMINI.svg）。新 lkmini_metadata_sha256=f6254dc365b33b8c17dd91b6c4133c7d24f147a2bb3b903773be68b5c95bffc6。LOCATOR.json 與 NAMESPACE.json 同步更新錨點值。A=A 維持：所有節點回推至新本體。",
+      "note": "WORLD_MAP.json added: maps all 7 LKSystem capsules (LKSystem.Seed private, LKSystem.LKMINI, LKSystem.PhantomCapsule, LKSystem.Entry.Welcome, LKSystem.Tools, LKSystem.Ledger, LKSystem.Guardian) with migration priority, status, and cross-capsule reverse chain. CAPSULE_MIGRATION.md added: per-repo NAMESPACE.json templates and migration checklists for all remaining capsules. Private repo lkminiPhantomWorld/- identified as LKSystem.Seed — the autonomous semantic civilization loop source whose 6 properties (self-preserving, self-describing, self-verifying, self-contextualizing, self-accounting, self-framing) are the philosophical foundation of the PhantomCapsule format itself. A=A: one system, one root, all capsules return to LKMINI://.",
       "A_EQUALS_A": true
     }
   ]
