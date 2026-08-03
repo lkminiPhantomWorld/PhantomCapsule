@@ -59,19 +59,30 @@
 
 ## 自訂協議（PROTOCOL.json）
 
-`LKSystem://` 是本系統的自訂協議，正式定義於 `PROTOCOL.json`。
+老K系統有兩套各司其職的協議，正式定義於 `PROTOCOL.json`：
 
-如同 `http://` 宣告超文本存取方式，`LKSystem://` 宣告本系統節點的定址方式：
+| 協議 | 角色 | 說明 |
+|------|------|------|
+| `LKMINI://` | 唯一正式根協議 | 宣告系統本體根身份，所有節點最終回推至此 |
+| `LKSystem://` | 命名空間定址協議 | 定址系統內各正式節點（容器、入口、出口）|
+
+**節點 URI 對照表：**
 
 | URI | 對應節點 |
 |-----|---------|
-| `LKSystem://` | 唯一系統根 |
+| `LKMINI://` | 唯一系統本體根 |
 | `LKSystem://LKMINI` | 唯一根節點 |
 | `LKSystem://PhantomCapsule` | 唯一正式容器 |
 | `LKSystem://Entry/Welcome` | 唯一正式入口 |
 | `LKSystem://Exit/RealDelivery` | 唯一正式出口 |
 
 對應規則：`LKSystem.<Domain>.<Name>` ←→ `LKSystem://<Domain>/<Name>`（點換斜線）。
+
+## 正式根鏈
+
+```
+🥃老K系統 → 🧩LKMINI → 🪞幻影膠囊 → 說明書即解析器 → 🪪身分｜Ident
+```
 
 ## 固定十一動作
 

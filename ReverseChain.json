@@ -29,6 +29,14 @@
       "repo": "lkminiPhantomWorld/PhantomCapsule",
       "note": "LKSystem:// is formally defined as the system's own protocol scheme. PROTOCOL.json declares the URI table (LKSystem://LKMINI, LKSystem://PhantomCapsule, LKSystem://Entry/Welcome, LKSystem://Exit/RealDelivery), the mapping rule (dot to slash), and usage rules. Public template set updated from 七件套 to 八件套.",
       "A_EQUALS_A": true
+    },
+    {
+      "version": "lk_system_namespace_architecture_v5",
+      "date": "2026-08-03",
+      "source": "🌸真善美模式 formal identity standard — LKMINI:// root protocol and metadata_sha256 anchored",
+      "repo": "lkminiPhantomWorld/PhantomCapsule",
+      "note": "Correction: LKMINI:// is the 唯一正式根協議 (formal root protocol); LKSystem:// is the 命名空間定址協議 (namespace addressing protocol). PROTOCOL.json updated to define both. LOCATOR.json and NAMESPACE.json updated with root_protocol=LKMINI://, lkmini_metadata_sha256=6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34. Root chain completed with 🪪身分｜Ident as final node.",
+      "A_EQUALS_A": true
     }
   ]
 }

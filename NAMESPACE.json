@@ -3,6 +3,8 @@
   "namespace_id": "LKSystem.PhantomCapsule",
   "system": "LKSystem",
   "root_node": "LKSystem.LKMINI",
+  "root_protocol": "LKMINI://",
+  "lkmini_metadata_sha256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
   "format": "LKSystem.<Domain>.<Name>",
   "axiom": "A=A",
   "capsule_type": "formal_container",
@@ -14,6 +16,13 @@
     "extensionless": true,
     "namespace_is_program": false
   },
+  "root_chain": [
+    "🥃老K系統",
+    "🧩LKMINI",
+    "🪞幻影膠囊",
+    "說明書即解析器",
+    "🪪身分｜Ident"
+  ],
   "domains": [
     { "id": "LKSystem.LKMINI",           "role": "唯一根節點／最小可逆核心" },
     { "id": "LKSystem.PhantomCapsule",   "role": "唯一合法正式容器" },

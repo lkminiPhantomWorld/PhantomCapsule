@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "lk_system_namespace_architecture_v4",
-  "timestamp": "2026-08-03T08:07:00+08:00",
+  "snapshot_id": "lk_system_namespace_architecture_v5",
+  "timestamp": "2026-08-03T08:12:00+08:00",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "status": {
@@ -13,18 +13,21 @@
     "NAMESPACE_DECLARED": true,
     "FORMAL_NAMESPACE_LKSYSTEM": true,
     "NAMESPACE_SELF_DESCRIPTION": true,
-    "PROTOCOL_DEFINED": true
+    "PROTOCOL_DEFINED": true,
+    "LKMINI_ROOT_PROTOCOL_CORRECT": true,
+    "LKMINI_SHA256_ANCHORED": true,
+    "ROOT_CHAIN_COMPLETE": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS lists public template artifacts.",
     "MANIFEST": "MANIFEST.json lists required public files and boundaries.",
-    "LOCATOR": "LOCATOR.json records public repository and entry coordinates.",
-    "NAMESPACE": "NAMESPACE.json declares the capsule namespace (xmlns: LKSystem://PhantomCapsule); capsule can self-describe its existence.",
-    "PROTOCOL": "PROTOCOL.json formally defines the LKSystem:// protocol scheme, URI table, and mapping rule.",
+    "LOCATOR": "LOCATOR.json records root_protocol=LKMINI://, namespace_protocol=LKSystem://, and lkmini_metadata_sha256.",
+    "NAMESPACE": "NAMESPACE.json declares xmlns: LKSystem://PhantomCapsule, root_protocol: LKMINI://, lkmini_metadata_sha256, and root_chain (5 steps including Ident).",
+    "PROTOCOL": "PROTOCOL.json defines both protocols: LKMINI:// (唯一正式根協議) and LKSystem:// (命名空間定址協議).",
     "SNAPSHOT": "SNAPSHOT.json records this public template state.",
     "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
     "PACKAGE": "PACKAGE.md describes the public package boundary.",
-    "ACTIONS": "11 actions are documented, including Search, and no tool name is promoted to a formal system action.",
+    "ACTIONS": "11 actions are documented, including Search.",
     "NAMESPACE_ARCH": "The LKSystem formal namespace architecture is documented across README.md, PACKAGE.md, MANIFEST.json, LOCATOR.json, NAMESPACE.json, and PROTOCOL.json."
   }
 }
