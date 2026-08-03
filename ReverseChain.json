@@ -70,6 +70,28 @@
         "A=A"
       ],
       "A_EQUALS_A": true
+    },
+    {
+      "version": "public_capsule_v1_2_sites_public_access_repair",
+      "timestamp": "2026-08-04T04:40:58+08:00",
+      "source": "Sites connector readback plus anonymous HTTP readback from lkmini-wiring-hub and /api/system-wires",
+      "repair": "Recorded Kevin-authorized public access repair. Replaced stale 401/access-boundary statement with HTTP 200 public site and API readback, while keeping GitHub Branch-Path as package identity evidence.",
+      "sites_access_mode": "public",
+      "site_http_status": 200,
+      "api_http_status": 200,
+      "api_content_type": "application/json",
+      "api_bytes": 17933,
+      "non_identity_warning": "Optional PWA/icon asset 404s remain pending and are not LKMINI system failure evidence.",
+      "core_mutation_bits": 0,
+      "reverse_path": [
+        "Sites public entry",
+        "/api/system-wires JSON",
+        "LOCATOR.json / SNAPSHOT.json / ReverseChain.json / SHA256SUMS",
+        "🪞幻影膠囊",
+        "🧩LKMINI",
+        "A=A"
+      ],
+      "A_EQUALS_A": true
     }
   ]
 }
