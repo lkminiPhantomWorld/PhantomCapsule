@@ -1,17 +1,17 @@
 {
   "name": "ReverseChain",
-  "purpose": "Public Phantom Capsule template lineage and restore reference chain",
+  "purpose": "Public LKSystem namespace architecture lineage and restore reference chain",
   "owner": "Kevin Yang / 老K",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "A_EQUALS_A": true,
-  "actions": 11,
+  "actions": 10,
   "chain": [
     {
-      "version": "public_template_v0",
-      "date": "2026-08-01",
-      "source": "lkminiPhantomWorld/welcome PHANTOM_CAPSULE_FORMULA.md plus PhantomCapsule README.md",
+      "version": "lk_system_namespace_architecture_v1",
+      "date": "2026-08-03",
+      "source": "LKSystem namespace architecture manual plus PhantomCapsule README.md",
       "repo": "lkminiPhantomWorld/PhantomCapsule",
-      "note": "Public template six-condition scaffold. Private LKMINI core remains outside this repository. Action set expanded to 11 with Search included.",
+      "note": "Formal namespace architecture keeps a single system root, a single root node, and a single formal container. Tool and platform names are not promoted into the system tree.",
       "A_EQUALS_A": true
     }
   ]

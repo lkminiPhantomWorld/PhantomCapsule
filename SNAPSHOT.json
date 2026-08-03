@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v1",
-  "timestamp": "2026-08-03T00:00:00+08:00",
+  "snapshot_id": "lk_system_namespace_architecture_v1",
+  "timestamp": "2026-08-03T07:38:00+08:00",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "status": {
@@ -9,8 +9,9 @@
     "PRIVATE_CORE_INCLUDED": false,
     "REVERSIBLE_CONDITIONS_DECLARED": true,
     "A_EQUALS_A": true,
-    "ACTIONS_11_DOCUMENTED": true,
-    "NAMESPACE_DECLARED": true
+    "ACTIONS_10_DOCUMENTED": true,
+    "NAMESPACE_DECLARED": true,
+    "FORMAL_NAMESPACE_LKSYSTEM": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS lists public template artifacts.",
@@ -19,7 +20,7 @@
     "SNAPSHOT": "SNAPSHOT.json records this public template state.",
     "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
     "PACKAGE": "PACKAGE.md describes the public package boundary.",
-    "ACTIONS": "11 actions are documented, including Search.",
-    "NAMESPACE": "The PhantomCapsule namespace convention is documented across README.md, PACKAGE.md, and MANIFEST.json."
+    "ACTIONS": "10 actions are documented and no tool name is promoted to a formal system action.",
+    "NAMESPACE": "The LKSystem formal namespace architecture is documented across README.md, PACKAGE.md, MANIFEST.json, and LOCATOR.json."
   }
 }

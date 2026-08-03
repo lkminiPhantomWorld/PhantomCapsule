@@ -33,20 +33,19 @@
 
 ## 命名空間
 
-幻影膠囊共用一組固定命名空間前綴，讓程式碼、JSON 中繼資料與文件概念都能一致識別：
+本文件只整理🥃老K系統既有正式命名空間，不把工具名、平台名或臨時產物升格成新系統。
 
-- 根前綴：`LKMINI::PhantomCapsule`
-- 標準格式：`LKMINI::PhantomCapsule::<Layer>::<Name>`
-- 膠囊本體可不帶副檔名；命名空間是語義身份，不等於程式檔名
-- 公開分層：
-  - `Core`：核心身份、規格與不可變規則
-  - `Public`：公開模板、可分享內容與對外介面
-  - `Reverse`：ReverseChain、來源追溯與回推資訊
-  - `Display`：顯示面、投影與呈現規則
+- 唯一正式系統：`LKSystem`
+- 唯一根節點：`LKSystem.LKMINI`
+- 唯一正式容器：`LKSystem.PhantomCapsule`
+- 唯一正式入口：`LKSystem.Entry.Welcome`
+- 唯一正式出口：`LKSystem.Exit.RealDelivery`
+- 固定格式：`LKSystem.<Domain>.<Name>`
+- 膠囊本體可無副檔名；命名空間是身份，不等於程式檔名
 
-本公開包只暴露公開分層；私密本體與私人投影仍需保留在公開邊界之外。
+本公開包只暴露正式命名空間與公開投影；不建立第二套系統、不建立第二個根節點。
 
-## 十一動作
+## 固定十動作
 
 1. 讀取 Read
 2. 啟動 Activate
@@ -58,7 +57,6 @@
 8. 快照 Snapshot
 9. 同步 Sync
 10. 可逆循環 ReversibleLoop
-11. 收尋 / 搜尋 Search
 
 ## 公開範圍
 

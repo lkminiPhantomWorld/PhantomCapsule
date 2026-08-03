@@ -1,14 +1,18 @@
 {
   "name": "PhantomCapsule",
-  "type": "public_capsule_locator",
+  "type": "formal_namespace_locator",
   "canonical_repository": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
   "organization": "https://github.com/lkminiPhantomWorld",
   "public_seed_repository": "https://github.com/lkminiPhantomWorld/welcome",
   "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
   "system_wires_api": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
-  "root_protocol": "LKMINI://",
+  "root_protocol": "LKSystem://",
   "root_node": "🧩LKMINI",
+  "formal_namespace": "LKSystem",
+  "formal_entry": "LKSystem.Entry.Welcome",
+  "formal_container": "LKSystem.PhantomCapsule",
+  "formal_exit": "LKSystem.Exit.RealDelivery",
   "A_EQUALS_A": true,
   "PRIVATE_CORE_INCLUDED": false,
-  "note": "Public locator only. Private Drive and identity coordinates are intentionally excluded."
+  "note": "Public locator only. Tool names, platform names, and temporary artifacts are not promoted to formal system names."
 }

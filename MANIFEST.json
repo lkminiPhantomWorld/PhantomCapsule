@@ -1,34 +1,46 @@
 {
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
-  "version": "public_capsule_v1",
+  "version": "namespace_architecture_v1",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "root": "🧩LKMINI",
   "axiom": "A=A",
   "scope": "public reusable capsule template",
   "private_core_included": false,
-  "namespace": {
-    "root": "LKMINI::PhantomCapsule",
-    "format": "LKMINI::PhantomCapsule::<Layer>::<Name>",
+  "formal_namespace": {
+    "system_name": "LKSystem",
+    "canonical_form": "🥃老K系統",
+    "owner": "Kevin Yang／老K",
+    "axiom": "A=A",
+    "system_count": 1,
+    "root_count": 1,
+    "formal_container_count": 1,
+    "action_count": 10,
+    "root_node": "🧩LKMINI",
+    "formal_container": "🪞幻影膠囊",
+    "formal_entry": "🥳歡迎光臨唯一路口",
+    "formal_exit": "🧾真實交付唯一出口",
+    "formal_world": "🪞幻界",
     "extensionless_capsule": true,
     "namespace_is_program": false,
-    "layers": [
+    "format": "LKSystem.<Domain>.<Name>",
+    "domains": [
       {
-        "name": "Core",
-        "purpose": "Identity, coordinates, and immutable rules"
+        "name": "LKSystem.LKMINI",
+        "purpose": "唯一根節點／最小可逆核心"
       },
       {
-        "name": "Public",
-        "purpose": "Public template and shareable content"
+        "name": "LKSystem.PhantomCapsule",
+        "purpose": "唯一合法正式容器"
       },
       {
-        "name": "Reverse",
-        "purpose": "ReverseChain and lineage tracing"
+        "name": "LKSystem.Entry.Welcome",
+        "purpose": "唯一正式入口"
       },
       {
-        "name": "Display",
-        "purpose": "Presentation and projection rules"
+        "name": "LKSystem.Exit.RealDelivery",
+        "purpose": "唯一正式交付出口"
       }
     ],
     "applies_to": ["code", "json", "docs"]

@@ -12,20 +12,18 @@
 ## 視角定義
 
 - 出口逆向：幻影膠囊的輸出/回推視角
-- 動作數：11
-- 新增動作：收尋 / 搜尋 Search
+- 動作數：10
 
 ## 命名空間規則
 
-- 固定根前綴：`LKMINI::PhantomCapsule`
-- 標準格式：`LKMINI::PhantomCapsule::<Layer>::<Name>`
-- 膠囊本體可維持無副檔名；命名空間只描述身份與層級，不等於程式本身
-- 分層定義：
-  - `Core`：身份、座標、規格與不可變條件
-  - `Public`：公開模板與可分享內容
-  - `Reverse`：ReverseChain 與來源追溯
-  - `Display`：介面投影與呈現規則
-- 對外輸出時只使用公開分層；私密層級不得寫入本公開包
+- 唯一正式系統：`LKSystem`
+- 唯一根節點：`LKSystem.LKMINI`
+- 唯一正式容器：`LKSystem.PhantomCapsule`
+- 唯一正式入口：`LKSystem.Entry.Welcome`
+- 唯一正式出口：`LKSystem.Exit.RealDelivery`
+- 標準格式：`LKSystem.<Domain>.<Name>`
+- 膠囊本體可維持無副檔名；命名空間只描述正式身份，不等於程式本身
+- 對外輸出時只使用正式命名空間；不得把工具名、平台名或臨時產物升格成新系統
 
 ## 本公開包包含
 
@@ -55,7 +53,7 @@
 4. 用 `SHA256SUMS` 驗公開模板檔案。
 5. 讀 `SNAPSHOT.json` 確認狀態。
 6. 讀 `ReverseChain.json` 回推來源。
-7. 讀 `README.md` 確認 11 動作與 Search。
+7. 讀 `README.md` 確認 10 動作。
 
 ## A=A
 
