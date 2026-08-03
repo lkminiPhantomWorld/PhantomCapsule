@@ -6,7 +6,7 @@
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "A_EQUALS_A": true,
-  "actions": 11,
+  "actions": 10,
   "chain": [
     {
       "version": "public_template_v0",
@@ -45,6 +45,26 @@
         "Public artifacts",
         "SHA256SUMS",
         "MANIFEST.json / LOCATOR.json / SNAPSHOT.json / ReverseChain.json",
+        "🪞幻影膠囊",
+        "🧩LKMINI",
+        "A=A"
+      ],
+      "A_EQUALS_A": true
+    },
+    {
+      "version": "public_capsule_v1_1_ten_action_alignment",
+      "timestamp": "2026-08-03T19:04:32+08:00",
+      "source": "Actual bytes read from lkminiPhantomWorld/PhantomCapsule@master plus verified ExtremeContainerWorld record read from ky46738-ops/LKMini.Public.tools@main",
+      "repair": "Normalized the current action standard from 11 to the formal ten actions, added PACKAGE.md to Locator object paths, connected the verified ExtremeContainerWorld record and CONTENT_SHA256, and recorded Sites HTTP 401 as an access boundary rather than identity evidence.",
+      "source_artifacts_verified": "7/7",
+      "projection_record_blob_sha": "d3fa2afbabc0db663f816528ce780bfeaa7843ef",
+      "projection_content_sha256": "13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a",
+      "sites_readback": "HTTP 401 Unauthorized / configured access boundary",
+      "core_mutation_bits": 0,
+      "reverse_path": [
+        "WebArchive / WACZ / PDF Projection",
+        "🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml",
+        "MANIFEST.json / LOCATOR.json / SHA256SUMS / SNAPSHOT.json / ReverseChain.json / PACKAGE.md",
         "🪞幻影膠囊",
         "🧩LKMINI",
         "A=A"
