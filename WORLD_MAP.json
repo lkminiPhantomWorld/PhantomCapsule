@@ -10,7 +10,6 @@
   "generated_at": "2026-08-03T10:44:00+08:00",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "purpose": "整個老K系統的膠囊版圖。從任一個膠囊出發都能找到全貌。所有膠囊最終回推至唯一根節點 LKMINI://。",
-
   "capsules": [
     {
       "namespace_id": "LKSystem.Seed",
@@ -44,7 +43,16 @@
         "INTERPRETATION_BOUNDARY.md",
         "SEMANTIC_INTEGRITY.md"
       ],
-      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "missing": [
+        "NAMESPACE",
+        "MANIFEST",
+        "LOCATOR",
+        "PROTOCOL",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS",
+        "PACKAGE"
+      ],
       "migration_priority": 0,
       "note": "整個系統的語意根基。HOW_TO_READ_THIS 定義的六項自主循環就是幻影膠囊格式的哲學來源。補齊八件套後，膠囊即為自主語意文明種子的完整實現。PRIVATE_CORE_INCLUDED=true。"
     },
@@ -57,8 +65,18 @@
       "branch": "seed_v0",
       "url": "https://github.com/lkminiPhantomWorld/LKMini",
       "capsule_status": "partial",
-      "has": ["MANIFEST", "LOCATOR", "SNAPSHOT", "REVERSECHAIN", "SHA256SUMS"],
-      "missing": ["NAMESPACE.json", "PROTOCOL.json", "PACKAGE.md"],
+      "has": [
+        "MANIFEST",
+        "LOCATOR",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS"
+      ],
+      "missing": [
+        "NAMESPACE",
+        "PROTOCOL",
+        "PACKAGE"
+      ],
       "migration_priority": 1,
       "note": "最接近完整，只需補 NAMESPACE.json、PROTOCOL.json（輕量參考版）與 PACKAGE.md"
     },
@@ -71,7 +89,17 @@
       "branch": "master",
       "url": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
       "capsule_status": "complete",
-      "has": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md", "CALLSPEC.md"],
+      "has": [
+        "NAMESPACE.json",
+        "MANIFEST.json",
+        "LOCATOR.json",
+        "PROTOCOL.json",
+        "SNAPSHOT.json",
+        "ReverseChain.json",
+        "SHA256SUMS",
+        "PACKAGE.md",
+        "CALLSPEC.md"
+      ],
       "missing": [],
       "migration_priority": 0,
       "note": "公開八件套完整，是所有其他膠囊的格式範本與主協議來源"
@@ -87,7 +115,16 @@
       "live_url": "https://lkminiphantomworld.github.io/welcome",
       "capsule_status": "needs_capsule_header",
       "has": [],
-      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "missing": [
+        "NAMESPACE",
+        "MANIFEST",
+        "LOCATOR",
+        "PROTOCOL",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS",
+        "PACKAGE"
+      ],
       "migration_priority": 5,
       "note": "最複雜，是對外公開的 HTML 入口；補膠囊件套時不得破壞現有 HTML 入口邏輯"
     },
@@ -101,7 +138,16 @@
       "url": "https://github.com/lkminiPhantomWorld/Tools",
       "capsule_status": "needs_capsule_header",
       "has": [],
-      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "missing": [
+        "NAMESPACE",
+        "MANIFEST",
+        "LOCATOR",
+        "PROTOCOL",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS",
+        "PACKAGE"
+      ],
       "migration_priority": 3,
       "note": "已有 PhantomCapsule/ 子目錄；補膠囊件套時不動現有工具邏輯"
     },
@@ -115,7 +161,16 @@
       "url": "https://github.com/lkminiPhantomWorld/tiny-state-core",
       "capsule_status": "needs_capsule_header",
       "has": [],
-      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "missing": [
+        "NAMESPACE",
+        "MANIFEST",
+        "LOCATOR",
+        "PROTOCOL",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS",
+        "PACKAGE"
+      ],
       "migration_priority": 4,
       "note": "JavaScript 帳本；補膠囊件套時不動現有 core.js 邏輯"
     },
@@ -129,21 +184,53 @@
       "url": "https://github.com/lkminiPhantomWorld/vpoop-guardian",
       "capsule_status": "needs_capsule_header",
       "has": [],
-      "missing": ["NAMESPACE.json", "MANIFEST.json", "LOCATOR.json", "PROTOCOL.json", "SNAPSHOT.json", "ReverseChain.json", "SHA256SUMS", "PACKAGE.md"],
+      "missing": [
+        "NAMESPACE",
+        "MANIFEST",
+        "LOCATOR",
+        "PROTOCOL",
+        "SNAPSHOT",
+        "REVERSECHAIN",
+        "SHA256SUMS",
+        "PACKAGE"
+      ],
       "migration_priority": 2,
       "note": "最輕量，只有 README.md、LICENSE、SECURITY.md；最容易完成膠囊化"
     }
   ],
-
   "migration_order": [
-    { "priority": 0, "namespace_id": "LKSystem.Seed",            "repo": "-",              "visibility": "private" },
-    { "priority": 1, "namespace_id": "LKSystem.LKMINI",          "repo": "LKMini" },
-    { "priority": 2, "namespace_id": "LKSystem.Guardian",        "repo": "vpoop-guardian" },
-    { "priority": 3, "namespace_id": "LKSystem.Tools",           "repo": "Tools" },
-    { "priority": 4, "namespace_id": "LKSystem.Ledger",          "repo": "tiny-state-core" },
-    { "priority": 5, "namespace_id": "LKSystem.Entry.Welcome",   "repo": "welcome" }
+    {
+      "priority": 0,
+      "namespace_id": "LKSystem.Seed",
+      "repo": "-",
+      "visibility": "private"
+    },
+    {
+      "priority": 1,
+      "namespace_id": "LKSystem.LKMINI",
+      "repo": "LKMini"
+    },
+    {
+      "priority": 2,
+      "namespace_id": "LKSystem.Guardian",
+      "repo": "vpoop-guardian"
+    },
+    {
+      "priority": 3,
+      "namespace_id": "LKSystem.Tools",
+      "repo": "Tools"
+    },
+    {
+      "priority": 4,
+      "namespace_id": "LKSystem.Ledger",
+      "repo": "tiny-state-core"
+    },
+    {
+      "priority": 5,
+      "namespace_id": "LKSystem.Entry.Welcome",
+      "repo": "welcome"
+    }
   ],
-
   "root_chain": [
     "🥃老K系統",
     "🧩LKMINI",
@@ -151,7 +238,6 @@
     "說明書即解析器",
     "🪪身分｜Ident"
   ],
-
   "protocol_reference": "https://github.com/lkminiPhantomWorld/PhantomCapsule/blob/master/PROTOCOL.json",
   "capsule_template_reference": "https://github.com/lkminiPhantomWorld/PhantomCapsule",
   "PRIVATE_CORE_INCLUDED": false
