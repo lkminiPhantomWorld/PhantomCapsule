@@ -4,7 +4,7 @@
   "system": "LKSystem",
   "root_node": "LKSystem.LKMINI",
   "root_protocol": "LKMINI://",
-  "lkmini_metadata_sha256": "f6254dc365b33b8c17dd91b6c4133c7d24f147a2bb3b903773be68b5c95bffc6",
+  "lkmini_metadata_sha256": "412aabdb5985e8237be94a96204bad5abfa94c6e1de5ffd83077e465e85b84e3",
   "format": "LKSystem.<Domain>.<Name>",
   "axiom": "A=A",
   "capsule_type": "formal_container",
