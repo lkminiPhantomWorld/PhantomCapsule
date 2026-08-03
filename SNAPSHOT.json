@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v1_20260803T165639+0800",
-  "timestamp": "2026-08-03T16:56:39+08:00",
+  "snapshot_id": "phantom_capsule_public_template_v1_1_20260803T190432+0800",
+  "timestamp": "2026-08-03T19:04:32+08:00",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
@@ -13,8 +13,9 @@
     "SHA256SUMS_STATUS": "REAL",
     "REVERSIBLE_CONDITIONS_DECLARED": true,
     "A_EQUALS_A": true,
-    "ACTIONS_11_DOCUMENTED": true,
-    "CORE_MUTATION_BITS": 0
+    "CORE_MUTATION_BITS": 0,
+    "ACTIONS_10_DOCUMENTED": true,
+    "VERIFIED_PROJECTION_CONNECTED": true
   },
   "checked_conditions": {
     "SHA256": "SHA256SUMS is rebuilt from the current bytes of seven public artifacts.",
@@ -25,9 +26,24 @@
     "PACKAGE": "PACKAGE.md describes the existing public boundary; no new download package was created."
   },
   "external_projection": {
-    "system_entry": "ERROR",
-    "system_wires_api": "ERROR",
-    "checked_at": "2026-08-03T16:56:39+08:00",
-    "reason": "The current web fetch returned Cache miss for both Sites endpoints; they remain external projections and are not used as identity evidence."
+    "system_entry": "ACCESS_BOUNDARY",
+    "system_wires_api": "ACCESS_BOUNDARY",
+    "checked_at": "2026-08-03T19:04:32+08:00",
+    "reason": "Fresh web readback returned HTTP 401 Unauthorized for both Sites endpoints. This matches the configured access boundary; Sites remains an external projection and is not used as identity evidence."
+  },
+  "verified_projection": {
+    "identity": "LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world",
+    "repository": "ky46738-ops/LKMini.Public.tools",
+    "branch": "main",
+    "path": "🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml",
+    "record_blob_sha": "d3fa2afbabc0db663f816528ce780bfeaa7843ef",
+    "content_sha256": "13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a",
+    "projections": [
+      "WebArchive",
+      "WACZ",
+      "PDF"
+    ],
+    "root": "🧩LKMINI",
+    "axiom": "A=A"
   }
 }
