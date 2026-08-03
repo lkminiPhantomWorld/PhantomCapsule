@@ -30,7 +30,7 @@
     "PACKAGE.md": "describes the public package boundary without creating a download bundle"
   },
   "verification": {
-    "verified_at": "2026-08-03T16:11:11+08:00",
+    "verified_at": "2026-08-03T16:56:39+08:00",
     "source_bytes_obtained": true,
     "same_repository_branch_path": true,
     "core_mutation_bits": 0
