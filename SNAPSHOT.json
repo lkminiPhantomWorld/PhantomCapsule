@@ -1,63 +1,34 @@
 {
-  "snapshot_id": "phantom_capsule_public_template_v1_2_20260804T044058+0800",
-  "timestamp": "2026-08-04T04:40:58+08:00",
+  "snapshot_id": "phantom_capsule_public_no_extension_v1_2_20260807T000000+0800",
+  "timestamp": "2026-08-07T00:00:00+08:00",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
+  "root": "🧩LKMINI",
+  "container": "🪞幻影膠囊",
+  "namespace": "PhantomCapsule.Public.Template",
   "status": {
     "PUBLIC_REPO": true,
-    "PUBLIC_TEMPLATE_DEFINED": true,
+    "NO_EXTENSION_CAPSULE_PRESENT": true,
+    "INTERACTIVE_PUBLIC_VIEWER_PRESENT": true,
+    "PARSER_MANUAL_PRESENT": true,
     "PRIVATE_CORE_INCLUDED": false,
-    "SOURCE_BYTES_OBTAINED": true,
-    "SOURCE_ARTIFACTS_VERIFIED": "7/7",
-    "SHA256SUMS_STATUS": "REAL",
-    "REVERSIBLE_CONDITIONS_DECLARED": true,
+    "CREDENTIAL_VALUES_INCLUDED": false,
+    "INTERNAL_METHOD_INCLUDED": false,
     "A_EQUALS_A": true,
     "CORE_MUTATION_BITS": 0,
-    "ACTIONS_10_DOCUMENTED": true,
-    "VERIFIED_PROJECTION_CONNECTED": true,
-    "SITES_PUBLIC_ACCESS_READBACK": true,
-    "SYSTEM_WIRES_API_READBACK": true,
-    "OPTIONAL_PWA_ASSETS_PENDING": true
+    "PUBLIC_BOUNDARY_DECLARED": true
   },
   "checked_conditions": {
-    "SHA256": "SHA256SUMS is rebuilt from the current bytes of seven public artifacts.",
-    "MANIFEST": "MANIFEST.json declares required public files and their relationships.",
-    "LOCATOR": "LOCATOR.json records the active repository, branch and paths.",
-    "SNAPSHOT": "SNAPSHOT.json records this verified public projection state.",
-    "REVERSECHAIN": "ReverseChain.json records the return path to 🪞幻影膠囊, 🧩LKMINI and A=A.",
-    "PACKAGE": "PACKAGE.md describes the existing public boundary; no new download package was created."
+    "CAPSULE": "🪞幻影膠囊 exists as a no-extension public capsule projection.",
+    "PARSER_MANUAL": "📖說明書即解析器.md explains public reading boundaries while internal method is excluded.",
+    "MANIFEST": "MANIFEST.json declares public files and safety flags.",
+    "LOCATOR": "LOCATOR.json records public repository coordinates and display URLs.",
+    "REVERSECHAIN": "ReverseChain.json records the public return path to 🧩LKMINI and A=A.",
+    "SHA256SUMS": "SHA256SUMS is rebuilt from public raw file bytes."
   },
-  "external_projection": {
-    "system_entry": "HTTP_200_PUBLIC",
-    "system_wires_api": "HTTP_200_PUBLIC_JSON",
-    "checked_at": "2026-08-04T04:40:58+08:00",
-    "site_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/",
-    "api_url": "https://lkmini-wiring-hub.ky46738.chatgpt.site/api/system-wires",
-    "api_response_rule": "non-empty JSON response; exact byte count is volatile and not identity evidence",
-    "site_access_mode": "public",
-    "reason": "Kevin authorized public access. Fresh connector and anonymous HTTP readback confirm public site and API access. The previous 401 was an access policy state, not a system failure."
-  },
-  "non_identity_warnings": [
-    {
-      "path_group": "apple-touch-icon / favicon / manifest.webmanifest",
-      "status": "OPTIONAL_ASSET_404",
-      "meaning": "Browser PWA/icon convenience assets are missing. This does not break the LKMINI entry or /api/system-wires wiring."
-    }
-  ],
-  "verified_projection": {
-    "identity": "LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world",
-    "repository": "ky46738-ops/LKMini.Public.tools",
-    "branch": "main",
-    "path": "🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml",
-    "record_blob_sha": "d3fa2afbabc0db663f816528ce780bfeaa7843ef",
-    "content_sha256": "13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a",
-    "projections": [
-      "WebArchive",
-      "WACZ",
-      "PDF"
-    ],
-    "root": "🧩LKMINI",
-    "axiom": "A=A"
+  "public_boundary": {
+    "public_included": ["public template", "interactive viewer", "public status", "A=A return pointer"],
+    "public_excluded": ["private core", "credentials", "private Drive paths", "internal method", "task receipts"]
   }
 }
