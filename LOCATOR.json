@@ -10,7 +10,7 @@
   "root_node": "🧩LKMINI",
   "container": "🪞幻影膠囊",
   "namespace": "PhantomCapsule.Public.Template",
-  "A_EQUALS_A": true,
+  "A=A": true,
   "PRIVATE_CORE_INCLUDED": false,
   "CREDENTIAL_VALUES_INCLUDED": false,
   "INTERNAL_METHOD_INCLUDED": false,
