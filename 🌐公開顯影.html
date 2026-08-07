@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🌐公開顯影｜🪞幻影膠囊</title>
+<style>
+:root{color-scheme:light;--ink:#14201a;--muted:#5b7065;--line:#d9ded4;--bg:#f6f7f2;--panel:#fff;--accent:#1f3b31;--soft:#eef4ef;--ok:#17664d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft JhengHei",system-ui,sans-serif;letter-spacing:0}main{max-width:960px;margin:auto;padding:28px}.hero,.panel,.card{background:var(--panel);border:1px solid var(--line);border-radius:8px}.hero{border:2px solid var(--accent);padding:22px}h1{font-size:34px;margin:0 0 10px}p{line-height:1.65}.ok{color:var(--ok);font-weight:800}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:7px 10px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}.card{padding:15px;min-height:108px}.label{font-weight:800;color:#375044}.value{font-size:22px;font-weight:900;margin-top:8px}.toolbar{margin-top:14px}button{border:1px solid var(--accent);background:var(--accent);color:white;border-radius:8px;padding:10px 12px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}.panel{display:none;padding:16px;margin-top:12px}.panel.active{display:block}pre{white-space:pre-wrap;word-break:break-word;background:#fafbf8;border-left:5px solid var(--accent);padding:12px;border-radius:6px}@media(max-width:760px){h1{font-size:28px}}
+</style>
+<main>
+  <section class="hero">
+    <h1>🌐公開顯影｜🪞幻影膠囊</h1>
+    <p>這是瀏覽器用的公開外觀，不是膠囊本體。膠囊本體是無副檔名檔案：<strong>🪞幻影膠囊</strong>。</p>
+    <p class="ok">A=A｜PRIVATE_CORE_INCLUDED=false｜CREDENTIAL_VALUES_INCLUDED=false｜INTERNAL_METHOD_INCLUDED=false</p>
+    <div class="chips"><span class="chip">🪞 本體：無副檔名</span><span class="chip">🌐 這頁：公開顯影</span><span class="chip">🧩 回指：LKMINI</span><span class="chip">🔒 私有內容未包含</span></div>
+    <div class="toolbar"><button onclick="show('status')">🧾 狀態</button><button onclick="show('boundary')">🔒 邊界</button><button onclick="show('check')">🔬 自檢</button></div>
+  </section>
+  <section class="grid">
+    <article class="card"><div class="label">膠囊本體</div><div class="value">🪞幻影膠囊</div></article>
+    <article class="card"><div class="label">公開外觀</div><div class="value">🌐公開顯影.html</div></article>
+    <article class="card"><div class="label">根</div><div class="value">🧩LKMINI</div></article>
+    <article class="card"><div class="label">公理</div><div class="value">A=A</div></article>
+  </section>
+  <section id="status" class="panel active"><h2>🧾 狀態</h2><pre>膠囊本體：🪞幻影膠囊
+副檔名：無
+公開顯影：🌐公開顯影.html
+專用解析器環境：可運作
+一般瀏覽器：看公開顯影
+</pre></section>
+  <section id="boundary" class="panel"><h2>🔒 邊界</h2><pre>公開：名稱、公開命名空間、互動畫面、A=A 狀態
+保留：私有本體、內部做法、內部接線細節、授權資料、私人路徑、任務回執</pre></section>
+  <section id="check" class="panel"><h2>🔬 自檢</h2><pre>PRIVATE_CORE_INCLUDED=false
+CREDENTIAL_VALUES_INCLUDED=false
+INTERNAL_METHOD_INCLUDED=false
+A=A=true
+</pre></section>
+</main>
+<script>function show(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active')}</script>
+</html>
