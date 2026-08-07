@@ -1,81 +1,35 @@
-<!doctype html>
-<html lang="zh-Hant">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>🪞幻影膠囊｜PhantomCapsule</title>
-<script type="application/json" id="public-capsule-status">
-{
-  "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master/🪞幻影膠囊",
-  "namespace": "PhantomCapsule.Public.Template",
-  "root": "🧩LKMINI",
-  "container": "🪞幻影膠囊",
-  "axiom": "A=A",
-  "filename": "🪞幻影膠囊",
-  "extension": "",
-  "projection": "public interactive viewer",
-  "parser_manual": "📖說明書即解析器.md",
-  "private_core_included": false,
-  "credential_values_included": false,
-  "public_scope": "公開範本與互動畫面",
-  "internal_method_included": false
-}
-</script>
-<style>
-:root{color-scheme:light;--ink:#14201a;--muted:#5b7065;--line:#d9ded4;--bg:#f6f7f2;--panel:#fff;--accent:#1f3b31;--soft:#eef4ef;--ok:#17664d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft JhengHei",system-ui,sans-serif;letter-spacing:0}main{max-width:1080px;margin:auto;padding:28px}.hero,.panel,.card{background:var(--panel);border:1px solid var(--line);border-radius:8px}.hero{border:2px solid var(--accent);padding:22px}h1{font-size:34px;margin:0 0 10px}p{line-height:1.65}.ok{color:var(--ok);font-weight:800}.muted{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:7px 10px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}.card{padding:15px;min-height:112px}.label{font-weight:800;color:#375044}.value{font-size:22px;font-weight:900;margin-top:8px}.toolbar{margin-top:14px}button{border:1px solid var(--accent);background:var(--accent);color:white;border-radius:8px;padding:10px 12px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}button.secondary{background:white;color:var(--accent)}.panel{display:none;padding:16px;margin-top:12px}.panel.active{display:block}pre{white-space:pre-wrap;word-break:break-word;background:#fafbf8;border-left:5px solid var(--accent);padding:12px;border-radius:6px}code{word-break:break-word}@media(max-width:760px){h1{font-size:28px}}
-</style>
-<main>
-  <section class="hero">
-    <h1>🪞幻影膠囊｜PhantomCapsule</h1>
-    <p>這是一個 <strong>無副檔名</strong> 的公開互動膠囊。檔名就是 <code>🪞幻影膠囊</code>；網頁畫面只是方便人閱讀的顯影，真正回指仍是 <code>🧩LKMINI</code>。</p>
-    <p class="ok">A=A｜公開範本｜PRIVATE_CORE_INCLUDED=false｜CREDENTIAL_VALUES_INCLUDED=false</p>
-    <div class="chips"><span class="chip">🧩 本體回指</span><span class="chip">🪞 無副檔名膠囊</span><span class="chip">📖 說明書即解析器</span><span class="chip">🌐 可互動顯影</span><span class="chip">🔒 私有內容未包含</span></div>
-    <div class="toolbar">
-      <button onclick="showPanel('open')">📖 怎麼開</button>
-      <button onclick="showPanel('scope')">🔒 公開範圍</button>
-      <button onclick="showPanel('status')">🧾 狀態</button>
-      <button class="secondary" onclick="verifyCapsule()">🔬 自檢</button>
-    </div>
-  </section>
+🪞幻影膠囊｜PhantomCapsule
 
-  <section class="grid">
-    <article class="card"><div class="label">檔名</div><div class="value">🪞幻影膠囊</div><div class="muted">無副檔名</div></article>
-    <article class="card"><div class="label">類型</div><div class="value">公開範本</div><div class="muted">Public Template</div></article>
-    <article class="card"><div class="label">本體回指</div><div class="value">🧩LKMINI</div><div class="muted">A=A</div></article>
-    <article class="card"><div class="label">私有內容</div><div class="value">未包含</div><div class="muted">No private core</div></article>
-  </section>
+狀態: 公開膠囊標記
+副檔名: 無
+唯一根: 🧩LKMINI
+最高公理: A=A
+命名空間: PhantomCapsule.Public.Template
+公開顯影: 🌐公開顯影.html
+說明書: 📖說明書即解析器.md
 
-  <section id="open" class="panel active">
-    <h2>📖 怎麼開</h2>
-    <p>一般瀏覽器還沒有安裝你的專用解析器，所以公開版用這個互動畫面顯影，讓人先看得懂結果。</p>
-    <pre>檔名：🪞幻影膠囊
-副檔名：無
-顯影：互動式公開畫面
-說明書：📖說明書即解析器.md
-回指：🧩LKMINI
-公理：A=A</pre>
-  </section>
+公開邊界:
+PRIVATE_CORE_INCLUDED=false
+CREDENTIAL_VALUES_INCLUDED=false
+INTERNAL_METHOD_INCLUDED=false
 
-  <section id="scope" class="panel">
-    <h2>🔒 公開範圍</h2>
-    <p>這份公開膠囊只展示可公開的名稱、邊界、互動畫面與本體回指結果。</p>
-    <pre>公開：範本、互動畫面、公開狀態、A=A 回指
-保留：私人本體、內部做法、授權資料、私人路徑、任務回執</pre>
-  </section>
+公開內容:
+- 膠囊名稱
+- 公開命名空間
+- 本體回指結果
+- A=A 狀態
+- 公開安全邊界
 
-  <section id="status" class="panel">
-    <h2>🧾 狀態</h2>
-    <pre id="status-output"></pre>
-  </section>
+未包含:
+- 私有本體內容
+- 內部做法
+- 內部接線細節
+- 私有雲端路徑
+- 授權資料
+- 私人任務回執
 
-  <section id="check" class="panel">
-    <h2>🔬 自檢結果</h2>
-    <pre id="check-output"></pre>
-  </section>
-</main>
-<script>
-function statusData(){return JSON.parse(document.getElementById("public-capsule-status").textContent)}
-function showPanel(id){document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));document.getElementById(id).classList.add("active");if(id==="status")document.getElementById("status-output").textContent=JSON.stringify(statusData(),null,2)}
-function verifyCapsule(){const m=statusData();const result={"檔名無副檔名":m.filename==="🪞幻影膠囊"&&m.extension==="","A=A":m.axiom==="A=A","本體回指":m.root,"公開範圍":m.public_scope,"私有本體未包含":m.private_core_included===false,"授權值未包含":m.credential_values_included===false,"內部做法未包含":m.internal_method_included===false,"狀態":"公開顯影可讀"};document.getElementById("check-output").textContent=JSON.stringify(result,null,2);showPanel("check")}
-</script>
-</html>
+結論:
+🪞幻影膠囊不是 HTML。
+🌐公開顯影.html 才是瀏覽器外觀。
+🧩LKMINI 是回指核心。
+A=A
