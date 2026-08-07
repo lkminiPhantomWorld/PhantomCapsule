@@ -9,84 +9,157 @@
   "root": "🧩LKMINI",
   "container": "🪞幻影膠囊",
   "axiom": "A=A",
-  "projection": "interactive-html-in-no-extension-file",
+  "filename": "🪞幻影膠囊",
+  "extension": "",
+  "projection": "interactive-html-inside-no-extension-file",
+  "parser_manual": "📖說明書即解析器.md",
   "private_core_included": false,
   "credential_values_included": false,
-  "parser_manual": "📖說明書即解析器.md",
-  "minimum_reversible_set": ["SHA256", "MANIFEST", "LOCATOR", "SNAPSHOT", "REVERSECHAIN", "PACKAGE"]
+  "public_scope": "public reusable capsule template",
+  "minimum_reversible_set": ["SHA256", "MANIFEST", "LOCATOR", "SNAPSHOT", "REVERSECHAIN", "PACKAGE"],
+  "read_order": ["filename", "file_header", "embedded_manifest", "locator", "parser", "hook", "reversechain", "self_check"]
 }
 </script>
 <style>
-:root{color-scheme:light;--ink:#122018;--line:#d4dacd;--bg:#f7f8f2;--panel:#fff;--ok:#1d6b51;--warn:#8a5b00}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft JhengHei",system-ui,sans-serif}
-main{max-width:1080px;margin:auto;padding:28px}.hero{border:2px solid #203b31;background:var(--panel);border-radius:8px;padding:22px}
-h1{font-size:34px;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px;min-height:112px}.label{font-weight:800;color:#375044}.value{font-size:22px;font-weight:900;margin-top:8px}
-button{border:1px solid #203b31;background:#203b31;color:white;border-radius:8px;padding:10px 12px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}
-button.secondary{background:white;color:#203b31}.panel{display:none;border:1px solid var(--line);background:white;border-radius:8px;padding:16px;margin-top:12px}
-.panel.active{display:block}code,pre{white-space:pre-wrap;word-break:break-word}.ok{color:var(--ok);font-weight:800}.warn{color:var(--warn);font-weight:800}
+:root{color-scheme:light;--ink:#132018;--muted:#587064;--line:#d5dacd;--bg:#f6f7f2;--panel:#fff;--ok:#17664d;--bad:#9b2f2f;--accent:#203b31;--soft:#edf3ee}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft JhengHei",system-ui,sans-serif;letter-spacing:0}
+main{max-width:1120px;margin:auto;padding:28px}.hero{border:2px solid var(--accent);background:var(--panel);border-radius:8px;padding:22px}.hero p{line-height:1.65}
+h1{font-size:34px;margin:0 0 10px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:7px 10px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px;min-height:112px}.label{font-weight:800;color:#375044}.value{font-size:22px;font-weight:900;margin-top:8px}
+.toolbar{margin-top:14px}button{border:1px solid var(--accent);background:var(--accent);color:white;border-radius:8px;padding:10px 12px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}button.secondary{background:white;color:var(--accent)}
+.panel{display:none;border:1px solid var(--line);background:white;border-radius:8px;padding:16px;margin-top:12px}.panel.active{display:block}code,pre{white-space:pre-wrap;word-break:break-word}.ok{color:var(--ok);font-weight:800}.bad{color:var(--bad);font-weight:800}.muted{color:var(--muted)}
+.flow{display:grid;gap:8px}.step{border-left:5px solid var(--accent);background:#fafbf8;padding:10px;border-radius:6px}.small{font-size:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:760px){.two{grid-template-columns:1fr}h1{font-size:28px}}
 </style>
 <main>
   <section class="hero">
     <h1>🪞幻影膠囊｜PhantomCapsule</h1>
-    <p>這是一個無副檔名的公開互動膠囊。檔案本體不靠副檔名成立，解析方式寫在說明書裡。</p>
-    <p class="ok">A=A｜PRIVATE_CORE_INCLUDED=false｜CREDENTIAL_VALUES_INCLUDED=false</p>
-    <button onclick="showPanel('identity')">🧩 Identity</button>
-    <button onclick="showPanel('locator')">📍 Locator</button>
-    <button onclick="showPanel('parser')">📖 Parser</button>
-    <button onclick="showPanel('reverse')">♾ ReverseChain</button>
-    <button class="secondary" onclick="verifyCapsule()">🔬 自檢</button>
+    <p>這是一個 <strong>無副檔名</strong> 的公開互動膠囊。本體檔名就是 <code>🪞幻影膠囊</code>；解析器先讀檔名，再讀檔頭，再讀內嵌 Manifest。</p>
+    <p class="ok">A=A｜PRIVATE_CORE_INCLUDED=false｜CREDENTIAL_VALUES_INCLUDED=false｜MIT 公開範本</p>
+    <div class="chips"><span class="chip">🧩 Identity</span><span class="chip">📍 Locator</span><span class="chip">📖 Parser</span><span class="chip">🔗 Hook</span><span class="chip">📦 Manifest</span><span class="chip">📸 Snapshot</span><span class="chip">♾ ReverseChain</span></div>
+    <div class="toolbar">
+      <button onclick="showPanel('read')">📖 怎麼讀</button>
+      <button onclick="showPanel('identity')">🧩 Identity</button>
+      <button onclick="showPanel('locator')">📍 Locator</button>
+      <button onclick="showPanel('parser')">📖 Parser</button>
+      <button onclick="showPanel('hook')">🔗 Hook</button>
+      <button onclick="showPanel('manifest')">📦 Manifest</button>
+      <button onclick="showPanel('snapshot')">📸 Snapshot</button>
+      <button onclick="showPanel('reverse')">♾ ReverseChain</button>
+      <button class="secondary" onclick="verifyCapsule()">🔬 自檢</button>
+    </div>
   </section>
 
   <section class="grid">
-    <article class="card"><div class="label">本體</div><div class="value">🧩LKMINI</div></article>
-    <article class="card"><div class="label">容器</div><div class="value">🪞膠囊</div></article>
-    <article class="card"><div class="label">副檔名</div><div class="value">無</div></article>
-    <article class="card"><div class="label">公開邊界</div><div class="value">安全</div></article>
+    <article class="card"><div class="label">檔名</div><div class="value">🪞幻影膠囊</div><div class="muted">無副檔名</div></article>
+    <article class="card"><div class="label">本體</div><div class="value">🧩LKMINI</div><div class="muted">Identity 回指</div></article>
+    <article class="card"><div class="label">顯影</div><div class="value">HTML</div><div class="muted">由檔頭判定</div></article>
+    <article class="card"><div class="label">邊界</div><div class="value">公開安全</div><div class="muted">不含私有核心</div></article>
   </section>
 
-  <section id="identity" class="panel active">
-    <h2>🧩 Identity</h2>
-    <pre>LKMINI://lkminiPhantomWorld/PhantomCapsule@master/🪞幻影膠囊</pre>
+  <section id="read" class="panel active">
+    <h2>📖 無副檔名但可顯影：怎麼讀</h2>
+    <div class="flow">
+      <div class="step">S1｜讀檔名：<code>🪞幻影膠囊</code></div>
+      <div class="step">S2｜副檔名為空：進入無副檔名解析規則。</div>
+      <div class="step">S3｜讀檔頭：看到 <code>&lt;!doctype html&gt;</code> 或 <code>&lt;html</code>。</div>
+      <div class="step">S4｜顯影：以 HTML Viewer / Browser / WebView 顯示。</div>
+      <div class="step">S5｜讀內嵌 Manifest：抓 <code>script#phantom-capsule-manifest</code>。</div>
+      <div class="step">S6｜驗證：確認 Root、A=A、PRIVATE_CORE_INCLUDED=false。</div>
+      <div class="step">S7｜回推：Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI。</div>
+    </div>
   </section>
+
+  <section id="identity" class="panel">
+    <h2>🧩 Identity</h2>
+    <pre>Identity = LKMINI://lkminiPhantomWorld/PhantomCapsule@master/🪞幻影膠囊
+Root = 🧩LKMINI
+Axiom = A=A
+Projection ≠ Identity</pre>
+  </section>
+
   <section id="locator" class="panel">
     <h2>📍 Locator</h2>
     <pre>CoordinateType: GitHubRepositoryPath
 CurrentLocation: lkminiPhantomWorld/PhantomCapsule@master:🪞幻影膠囊
-Fallback: README.md / MANIFEST.json / 📖說明書即解析器.md</pre>
+ParserManual: 📖說明書即解析器.md
+Fallback: README.md / MANIFEST.json / SHA256SUMS
+UpdatedAt: 2026-08-07T21:35:00+08:00
+Verification: SHA256 + embedded manifest + A=A</pre>
   </section>
+
   <section id="parser" class="panel">
-    <h2>📖 Parser</h2>
-    <pre>1. 讀取檔名：🪞幻影膠囊
-2. 副檔名為空，改讀檔頭
-3. 檔頭為 &lt;!doctype html&gt;，以 HTML Projection 顯影
-4. 讀取 script#phantom-capsule-manifest
-5. 驗證 private_core_included=false
-6. 回推 🧩LKMINI 與 A=A</pre>
+    <h2>📖 Parser｜說明書即解析器</h2>
+    <pre>if filename == "🪞幻影膠囊" and extension == "":
+    header = read_first_bytes(file)
+    if header startswith "&lt;!doctype html&gt;" or "&lt;html":
+        render_as("HTML Projection")
+        manifest = read_json_script("phantom-capsule-manifest")
+        verify(manifest.root == "🧩LKMINI")
+        verify(manifest.axiom == "A=A")
+        verify(manifest.private_core_included == false)
+        return manifest.identity</pre>
   </section>
+
+  <section id="hook" class="panel">
+    <h2>🔗 Hook｜找到後做什麼</h2>
+    <pre>Hook.Read → 讀取膠囊本體
+Hook.Render → 顯影互動畫面
+Hook.Verify → 自檢 A=A 與公開邊界
+Hook.TraceBack → 回推 🧩LKMINI
+Hook.Export → 只輸出公開範本資料</pre>
+  </section>
+
+  <section id="manifest" class="panel">
+    <h2>📦 Manifest</h2>
+    <pre id="manifest-output"></pre>
+  </section>
+
+  <section id="snapshot" class="panel">
+    <h2>📸 Snapshot</h2>
+    <pre>狀態：公開互動膠囊 v1.2
+檔名：🪞幻影膠囊
+副檔名：無
+顯影方式：HTML Projection
+說明書即解析器：📖說明書即解析器.md
+公開邊界：PRIVATE_CORE_INCLUDED=false
+授權值：CREDENTIAL_VALUES_INCLUDED=false</pre>
+  </section>
+
   <section id="reverse" class="panel">
     <h2>♾ ReverseChain</h2>
-    <pre>Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI → A=A</pre>
+    <pre>🪞幻影膠囊
+→ HTML Projection
+→ Parser Manual
+→ Embedded Manifest
+→ Locator
+→ Verification
+→ Identity
+→ 🧩LKMINI
+→ A=A</pre>
   </section>
+
   <section id="check" class="panel">
     <h2>🔬 自檢結果</h2>
     <pre id="check-output"></pre>
   </section>
 </main>
 <script>
+function manifest(){return JSON.parse(document.getElementById("phantom-capsule-manifest").textContent)}
 function showPanel(id){
   document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));
   document.getElementById(id).classList.add("active");
+  if(id === "manifest") document.getElementById("manifest-output").textContent = JSON.stringify(manifest(), null, 2);
 }
 function verifyCapsule(){
-  const manifest = JSON.parse(document.getElementById("phantom-capsule-manifest").textContent);
+  const m = manifest();
   const result = {
-    "A=A": manifest.axiom === "A=A",
-    "Root": manifest.root === "🧩LKMINI",
-    "NoExtensionCapsule": true,
-    "PRIVATE_CORE_INCLUDED": manifest.private_core_included,
-    "CREDENTIAL_VALUES_INCLUDED": manifest.credential_values_included,
-    "ReverseChain": "Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI → A=A"
+    "檔名無副檔名": m.filename === "🪞幻影膠囊" && m.extension === "",
+    "A=A": m.axiom === "A=A",
+    "Root是LKMINI": m.root === "🧩LKMINI",
+    "可互動顯影": m.projection === "interactive-html-inside-no-extension-file",
+    "PRIVATE_CORE_INCLUDED": m.private_core_included,
+    "CREDENTIAL_VALUES_INCLUDED": m.credential_values_included,
+    "回推鏈": "Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI → A=A"
   };
   document.getElementById("check-output").textContent = JSON.stringify(result,null,2);
   showPanel("check");
