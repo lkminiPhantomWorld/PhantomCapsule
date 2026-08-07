@@ -16,6 +16,7 @@
   "INTERNAL_METHOD_INCLUDED": false,
   "object_paths": {
     "CAPSULE": "🪞幻影膠囊",
+    "PUBLIC_VIEWER": "🌐公開顯影.html",
     "PARSER_MANUAL": "📖說明書即解析器.md",
     "MANIFEST": "MANIFEST.json",
     "LOCATOR": "LOCATOR.json",
@@ -26,10 +27,11 @@
   },
   "display_urls": {
     "CAPSULE": "https://github.com/lkminiPhantomWorld/PhantomCapsule/blob/master/%F0%9F%AA%9E%E5%B9%BB%E5%BD%B1%E8%86%A0%E5%9B%8A",
+    "PUBLIC_VIEWER": "https://github.com/lkminiPhantomWorld/PhantomCapsule/blob/master/%F0%9F%8C%90%E5%85%AC%E9%96%8B%E9%A1%AF%E5%BD%B1.html",
     "PARSER_MANUAL": "https://github.com/lkminiPhantomWorld/PhantomCapsule/blob/master/%F0%9F%93%96%E8%AA%AA%E6%98%8E%E6%9B%B8%E5%8D%B3%E8%A7%A3%E6%9E%90%E5%99%A8.md"
   },
   "system_entry": "https://lkmini-wiring-hub.ky46738.chatgpt.site",
   "system_entry_role": "public projection only",
   "verified_at": "2026-08-07T00:00:00+08:00",
-  "note": "Public locator only. Private core, credentials, private Drive paths, internal method, task receipts, and internal wiring details are excluded."
+  "note": "Public coordinates only. Private core, credentials, private Drive paths, internal method, task receipts, and internal wiring details are excluded."
 }
