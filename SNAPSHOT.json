@@ -15,7 +15,7 @@
     "PRIVATE_CORE_INCLUDED": false,
     "CREDENTIAL_VALUES_INCLUDED": false,
     "INTERNAL_METHOD_INCLUDED": false,
-    "A_EQUALS_A": true,
+    "A=A": true,
     "CORE_MUTATION_BITS": 0,
     "PUBLIC_BOUNDARY_DECLARED": true
   },
