@@ -3,18 +3,19 @@
 # Branch: master
 # Identity: LKMINI://lkminiPhantomWorld/PhantomCapsule@master
 # Rebuilt: 2026-08-07T00:00:00+08:00
-# Scope: public reusable template and interactive viewer only; private core excluded.
+# Scope: public capsule marker and public viewer only; private core excluded.
 # PRIVATE_CORE_INCLUDED=false
 # CREDENTIAL_VALUES_INCLUDED=false
 # INTERNAL_METHOD_INCLUDED=false
 # A_EQUALS_A=true
 
-a6029a15fd15ef33a734ca640b4b9c0a6d2a5c0d09e6b23d8867241b049e1528  README.md
+2ececabf734ae659453b49e6b378f3dd7ca090cc6e99ff293f5920f0e8cb71b9  README.md
 10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067  LICENSE
-84450abfe192d417907a675cde0d340cf7cb3336db0b945f4691b2db392b7201  MANIFEST.json
-7367635870da2f6b79f0cf4ff077dd61bed88cdf1eb71f4e6d73acf2f559317b  LOCATOR.json
-3b11c29f1e896a0a48cae8bf524c8c0be27b11d6ab3476f0628dbbccb9afe363  SNAPSHOT.json
-aab5d7ba98ce9c52318bdfe12fe37594c9f069672c380e9d07bf64a2ae67c3b0  ReverseChain.json
-a98f2e6f2ec0e6b2b1ac8a03fb4f3eaf04577b3faa85915e4854b54f23c2c7b6  PACKAGE.md
-3558152e1cea2fbd4d3fc4dae415b52eecd5672a21c0ecd8d91188d259ff44ce  🪞幻影膠囊
-a7fdbec5178b654b65ed9d36ed9f5af78a0785306368b5a0ed712bb14939ca5d  📖說明書即解析器.md
+27a3b8d383431d05e5172fa74057e25b70d23c1e4a7727f93cd93ad9cddd0953  MANIFEST.json
+e6597c2109302d316871e650374bd24412dd09711d084be6ddd8ff7f5edf39e5  LOCATOR.json
+5b0561e604289fcf0208901692384ca50423aa6c057920ac66614a1eb06f1a0d  SNAPSHOT.json
+516ea314b2397e0a851ac50b0458d97c5017c7d4d4c248a347500b89f38c1a34  ReverseChain.json
+386ac899124aecc3b38f908b65b1b22d4f77655e80e999385adb76b707d51aa4  PACKAGE.md
+af093ab53577830a0fdfb826e277784fe3c77fed0c18e92ebe7a244c6d05066b  🪞幻影膠囊
+ba6b1b7f44d35502d4cd8f9465f95975242067a4556a383ee2befa782748f00e  🌐公開顯影.html
+7e047f6376fec29bef00650fae1f347dd439e33a366480a6a6390278a2c79783  📖說明書即解析器.md
