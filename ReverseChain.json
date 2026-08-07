@@ -15,17 +15,18 @@
       "A_EQUALS_A": true
     },
     {
-      "version": "public_capsule_v1_2_no_extension_public_viewer",
+      "version": "public_capsule_v1_3_split_viewer",
       "timestamp": "2026-08-07T00:00:00+08:00",
       "source": "GitHub repository readback from lkminiPhantomWorld/PhantomCapsule@master",
-      "repair": "Added the no-extension public capsule file and public bridge parser manual, then sanitized the public boundary so private core, credentials, private paths, internal method, and task receipts are excluded.",
+      "state": "🪞幻影膠囊 is the no-extension capsule marker. 🌐公開顯影.html is the browser-visible public projection. Private core, credentials, private paths, internal method, task receipts, and internal wiring details are excluded.",
       "core_mutation_bits": 0,
       "private_core_included": false,
       "credential_values_included": false,
       "internal_method_included": false,
-      "reverse_path": [
-        "🪞幻影膠囊 public viewer",
-        "📖說明書即解析器.md public bridge",
+      "return_record": [
+        "🪞幻影膠囊",
+        "🌐公開顯影.html",
+        "📖說明書即解析器.md",
         "MANIFEST.json / LOCATOR.json / SNAPSHOT.json / SHA256SUMS",
         "🧩LKMINI",
         "A=A"
