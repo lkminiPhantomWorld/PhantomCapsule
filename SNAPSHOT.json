@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "phantom_capsule_public_no_extension_v1_2_20260807T000000+0800",
+  "snapshot_id": "phantom_capsule_public_split_viewer_v1_3_20260807T000000+0800",
   "timestamp": "2026-08-07T00:00:00+08:00",
   "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
@@ -10,7 +10,7 @@
   "status": {
     "PUBLIC_REPO": true,
     "NO_EXTENSION_CAPSULE_PRESENT": true,
-    "INTERACTIVE_PUBLIC_VIEWER_PRESENT": true,
+    "PUBLIC_VIEWER_PRESENT": true,
     "PARSER_MANUAL_PRESENT": true,
     "PRIVATE_CORE_INCLUDED": false,
     "CREDENTIAL_VALUES_INCLUDED": false,
@@ -19,16 +19,8 @@
     "CORE_MUTATION_BITS": 0,
     "PUBLIC_BOUNDARY_DECLARED": true
   },
-  "checked_conditions": {
-    "CAPSULE": "🪞幻影膠囊 exists as a no-extension public capsule projection.",
-    "PARSER_MANUAL": "📖說明書即解析器.md explains public reading boundaries while internal method is excluded.",
-    "MANIFEST": "MANIFEST.json declares public files and safety flags.",
-    "LOCATOR": "LOCATOR.json records public repository coordinates and display URLs.",
-    "REVERSECHAIN": "ReverseChain.json records the public return path to 🧩LKMINI and A=A.",
-    "SHA256SUMS": "SHA256SUMS is rebuilt from public raw file bytes."
-  },
   "public_boundary": {
-    "public_included": ["public template", "interactive viewer", "public status", "A=A return pointer"],
-    "public_excluded": ["private core", "credentials", "private Drive paths", "internal method", "task receipts"]
+    "public_included": ["public capsule marker", "browser-visible public viewer", "public status", "A=A return pointer"],
+    "public_excluded": ["private core", "credentials", "private Drive paths", "internal method", "task receipts", "internal wiring details"]
   }
 }
