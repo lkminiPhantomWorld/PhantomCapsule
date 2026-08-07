@@ -2,70 +2,59 @@
 
 狀態：公開開源包  
 主權：🥃老K  
-範圍：只公開幻影膠囊通用規格與範本，不公開私密本體。
+範圍：只公開幻影膠囊通用範本與顯影結果，不公開私密本體。
 
 ## 這是什麼
 
-出口逆向在這裡視為幻影膠囊的輸出/回推視角。
+`🪞幻影膠囊` 是公開版無副檔名膠囊。
 
-幻影膠囊是一種可視化容器。
+它可以用互動畫面顯影，但互動畫面只是方便閱讀的 Projection，不是本體本身。
 
-它不是單純圖片、普通 ZIP 或只有圖示的捷徑。
+本公開包只保留可公開的名稱、邊界、狀態、回指結果與驗證檔案。
 
-一顆幻影膠囊至少承載：Identity、Locator、Manifest、SHA256、Snapshot、ReverseChain、顯示面、回推鏈，以及啟動或導向入口。
+## 公開檔案
 
-## 解析器
-
-- 解析器負責依副檔名與檔案型別決定顯示方式。
-- 可互動的容器會隨支援的副檔功能增加而呈現得更完整。
-- 本公開包只描述通用解析邏輯，不包含私密或專屬格式能力。
-
-## 公共六件套
-
-本儲存庫的公開模板層以六個可驗證檔案對應最小可逆條件：
-
-1. `SHA256SUMS`：公開模板檔案雜湊。
-2. `MANIFEST.json`：必要檔案與關係清單。
-3. `LOCATOR.json`：公開程式座標與出入口座標。
-4. `SNAPSHOT.json`：公開模板狀態快照。
-5. `ReverseChain.json`：公開模板回推鏈。
-6. `PACKAGE.md`：公開封裝邊界與交付說明。
-
-## 十動作
-
-1. 讀取 Read
-2. 啟動 Activate
-3. 掛載 Mount
-4. 驗證 Verify
-5. 更新 Update
-6. 廣播 Broadcast
-7. 融合 Fusion
-8. 快照 Snapshot
-9. 同步 Sync
-10. 可逆循環 ReversibleLoop
-
-
-## 已驗證 Projection 接線
-
-- Identity：`LKMINI://🌐容器｜Containers/🌐容器共存｜ExtremeContainerWorld.world`
-- 程式座標：`ky46738-ops/LKMini.Public.tools@main:🌐容器共存｜極限世界｜ExtremeContainerWorld.yaml`
-- 記錄 Git Blob：`d3fa2afbabc0db663f816528ce780bfeaa7843ef`
-- 正式內容 SHA256：`13d5392d542a11c0232b3d8abca09e7f786e9b76d31cdcb0c0f9cd08efcc9e4a`
-- Projection：WebArchive／WACZ／PDF
-- 回推：Projection → 🪞幻影膠囊 → 🧩LKMINI → A=A
+- `🪞幻影膠囊`
+- `📖說明書即解析器.md`
+- `README.md`
+- `LICENSE`
+- `MANIFEST.json`
+- `LOCATOR.json`
+- `SNAPSHOT.json`
+- `ReverseChain.json`
+- `SHA256SUMS`
+- `PACKAGE.md`
 
 ## 公開範圍
 
-本開源包只公開通用規格與可重用範本。
+公開版包含：
 
-🥃LKMINI 私密本體、私密任務回執、私人身份鏈、Drive／Goodnotes／iOS 捷徑材料及非公開使用者資料，不屬於本公開儲存庫內容。
+- 膠囊名稱
+- 公開命名空間
+- 互動畫面
+- 本體回指結果
+- A=A 狀態
+- 公開安全邊界
 
-## A＝A 原則
+公開版不包含：
 
-顯示面可以變，投影平台可以變；身份鏈必須回推同一來源。
+- 私有本體內容
+- 內部研究方法
+- 內部接線細節
+- 私有雲端路徑
+- 授權 token
+- client_secret
+- refresh_token
+- 私人任務回執
+
+## A=A 原則
+
+顯影可以替換，公開位置可以改變；公開包仍只標記同一個 🧩LKMINI 回指結果。
 
 ## 授權
 
 - 公開儲存庫內容：MIT License
 - 私密本體內容：未包含
 - PRIVATE_CORE_INCLUDED=false
+- CREDENTIAL_VALUES_INCLUDED=false
+- INTERNAL_METHOD_INCLUDED=false
