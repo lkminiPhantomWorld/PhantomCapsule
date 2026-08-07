@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🪞幻影膠囊｜PhantomCapsule</title>
+<script type="application/json" id="phantom-capsule-manifest">
+{
+  "identity": "LKMINI://lkminiPhantomWorld/PhantomCapsule@master/🪞幻影膠囊",
+  "root": "🧩LKMINI",
+  "container": "🪞幻影膠囊",
+  "axiom": "A=A",
+  "projection": "interactive-html-in-no-extension-file",
+  "private_core_included": false,
+  "credential_values_included": false,
+  "parser_manual": "📖說明書即解析器.md",
+  "minimum_reversible_set": ["SHA256", "MANIFEST", "LOCATOR", "SNAPSHOT", "REVERSECHAIN", "PACKAGE"]
+}
+</script>
+<style>
+:root{color-scheme:light;--ink:#122018;--line:#d4dacd;--bg:#f7f8f2;--panel:#fff;--ok:#1d6b51;--warn:#8a5b00}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft JhengHei",system-ui,sans-serif}
+main{max-width:1080px;margin:auto;padding:28px}.hero{border:2px solid #203b31;background:var(--panel);border-radius:8px;padding:22px}
+h1{font-size:34px;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px;min-height:112px}.label{font-weight:800;color:#375044}.value{font-size:22px;font-weight:900;margin-top:8px}
+button{border:1px solid #203b31;background:#203b31;color:white;border-radius:8px;padding:10px 12px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}
+button.secondary{background:white;color:#203b31}.panel{display:none;border:1px solid var(--line);background:white;border-radius:8px;padding:16px;margin-top:12px}
+.panel.active{display:block}code,pre{white-space:pre-wrap;word-break:break-word}.ok{color:var(--ok);font-weight:800}.warn{color:var(--warn);font-weight:800}
+</style>
+<main>
+  <section class="hero">
+    <h1>🪞幻影膠囊｜PhantomCapsule</h1>
+    <p>這是一個無副檔名的公開互動膠囊。檔案本體不靠副檔名成立，解析方式寫在說明書裡。</p>
+    <p class="ok">A=A｜PRIVATE_CORE_INCLUDED=false｜CREDENTIAL_VALUES_INCLUDED=false</p>
+    <button onclick="showPanel('identity')">🧩 Identity</button>
+    <button onclick="showPanel('locator')">📍 Locator</button>
+    <button onclick="showPanel('parser')">📖 Parser</button>
+    <button onclick="showPanel('reverse')">♾ ReverseChain</button>
+    <button class="secondary" onclick="verifyCapsule()">🔬 自檢</button>
+  </section>
+
+  <section class="grid">
+    <article class="card"><div class="label">本體</div><div class="value">🧩LKMINI</div></article>
+    <article class="card"><div class="label">容器</div><div class="value">🪞膠囊</div></article>
+    <article class="card"><div class="label">副檔名</div><div class="value">無</div></article>
+    <article class="card"><div class="label">公開邊界</div><div class="value">安全</div></article>
+  </section>
+
+  <section id="identity" class="panel active">
+    <h2>🧩 Identity</h2>
+    <pre>LKMINI://lkminiPhantomWorld/PhantomCapsule@master/🪞幻影膠囊</pre>
+  </section>
+  <section id="locator" class="panel">
+    <h2>📍 Locator</h2>
+    <pre>CoordinateType: GitHubRepositoryPath
+CurrentLocation: lkminiPhantomWorld/PhantomCapsule@master:🪞幻影膠囊
+Fallback: README.md / MANIFEST.json / 📖說明書即解析器.md</pre>
+  </section>
+  <section id="parser" class="panel">
+    <h2>📖 Parser</h2>
+    <pre>1. 讀取檔名：🪞幻影膠囊
+2. 副檔名為空，改讀檔頭
+3. 檔頭為 &lt;!doctype html&gt;，以 HTML Projection 顯影
+4. 讀取 script#phantom-capsule-manifest
+5. 驗證 private_core_included=false
+6. 回推 🧩LKMINI 與 A=A</pre>
+  </section>
+  <section id="reverse" class="panel">
+    <h2>♾ ReverseChain</h2>
+    <pre>Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI → A=A</pre>
+  </section>
+  <section id="check" class="panel">
+    <h2>🔬 自檢結果</h2>
+    <pre id="check-output"></pre>
+  </section>
+</main>
+<script>
+function showPanel(id){
+  document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+function verifyCapsule(){
+  const manifest = JSON.parse(document.getElementById("phantom-capsule-manifest").textContent);
+  const result = {
+    "A=A": manifest.axiom === "A=A",
+    "Root": manifest.root === "🧩LKMINI",
+    "NoExtensionCapsule": true,
+    "PRIVATE_CORE_INCLUDED": manifest.private_core_included,
+    "CREDENTIAL_VALUES_INCLUDED": manifest.credential_values_included,
+    "ReverseChain": "Projection → Parser → Manifest → Locator → Identity → 🧩LKMINI → A=A"
+  };
+  document.getElementById("check-output").textContent = JSON.stringify(result,null,2);
+  showPanel("check");
+}
+</script>
+</html>
