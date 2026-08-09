@@ -1,0 +1,15 @@
+{
+  "product": "🪞幻影膠囊｜PhantomCapsule",
+  "public_surface_type": "commercial_product_result",
+  "files": [
+    "README.md",
+    "🌐產品顯影.html",
+    "📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md",
+    "🔬公開驗證摘要｜PublicVerificationSummary.json",
+    "📦公開產品清單｜PublicProductManifest.json"
+  ],
+  "open_source_product": false,
+  "public_tools_repository": "ky46738-ops/LKMini.Public.tools",
+  "internal_core_repository": "private",
+  "status": "完成"
+}
