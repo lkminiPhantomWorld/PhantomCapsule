@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-08-10T17:05:07.672073+08:00",
+  "identity": "🪞幻影膠囊",
+  "sha256_identity": "70a7bafbe3268e5b9fe72e0d91a370746ab6df38e4638a4d070240e5810a20b3",
+  "conversion_loop": ["Conversation","MarkdownSeed","SVG","WebP","GIF","MP4","HTML","Excel","TSV","CSV","JSON","PDF","EmbeddedVisual","SHA256Identity","Manifest","Locator","Snapshot","ReverseChain","Package"],
+  "same_identity_actions": ["顯影","保存狀態","建立快照","還原快照"]
+}
