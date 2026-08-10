@@ -1,9 +1,10 @@
 {
   "package": "🪞幻影膠囊",
   "identity": "LKMINI://APPLE-SIX-SUITE",
-  "sha256_identity": "6892a6047c39a503905e308443e09ff13b575c9379354f3654ceb1941387baa2",
+  "files": ["Capsule.csv","Capsule.json","Capsule.pdf","Capsule.tsv","Capsule.xlsx","Conversation.md","EmbeddedVisual.png","LOCATOR.json","MANIFEST.json","MarkdownSeed.md","Motion.mp4","PACKAGE.json","Projection.svg","Projection.webp","REVERSECHAIN.md","SHA256Identity.txt","SNAPSHOT.json","State.gif","🌐產品顯影.html"],
   "rebuild": "Read MANIFEST → LOCATOR → SNAPSHOT → REVERSECHAIN.md → verify SHA256SUMS → render Projection",
   "updated_at": "2026-08-10T17:21:25+08:00",
+  "sha256_identity": "e0c3870cf192b3270b572789fd4a006b9d389772d43a156aca30dee5663deb30",
   "public_scope": "index_hash_reversechain_only",
   "permanent_delete_count": 0
 }
