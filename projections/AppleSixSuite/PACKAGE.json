@@ -1,0 +1,9 @@
+{
+  "package": "🪞幻影膠囊",
+  "identity": "LKMINI://APPLE-SIX-SUITE",
+  "sha256_identity": "6892a6047c39a503905e308443e09ff13b575c9379354f3654ceb1941387baa2",
+  "rebuild": "Read MANIFEST → LOCATOR → SNAPSHOT → REVERSECHAIN.md → verify SHA256SUMS → render Projection",
+  "updated_at": "2026-08-10T17:21:25+08:00",
+  "public_scope": "index_hash_reversechain_only",
+  "permanent_delete_count": 0
+}
