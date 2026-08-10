@@ -1,0 +1,15 @@
+{
+  "identity": "🪞幻影膠囊",
+  "projection_identity": "LKMINI://APPLE-SIX-SUITE",
+  "formal_path": "🥃老K系統／🧩LKMINI／🪞幻影膠囊",
+  "root_protocol": "LKMINI://",
+  "metadata_sha256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "sha256_identity": "6892a6047c39a503905e308443e09ff13b575c9379354f3654ceb1941387baa2",
+  "updated_at": "2026-08-10T17:21:25+08:00",
+  "conversion_files": ["Conversation.md","MarkdownSeed.md","Projection.svg","Projection.webp","State.gif","Motion.mp4","🌐產品顯影.html","Capsule.xlsx","Capsule.tsv","Capsule.csv","Capsule.json","Capsule.pdf","EmbeddedVisual.png"],
+  "control_files": ["SHA256Identity.txt","MANIFEST.json","LOCATOR.json","SNAPSHOT.json","REVERSECHAIN.md","PACKAGE.json","SHA256SUMS.txt"],
+  "projection_rule": "Projection ≠ Identity",
+  "permanent_delete_count": 0,
+  "source_bytes_loaded": false,
+  "source_bytes_note": "Apple 原始素材位元未進公開 GitHub；此處只同步索引、雜湊與可逆鏈。"
+}
