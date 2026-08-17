@@ -1,7 +1,35 @@
 {
-  "created_at": "2026-08-10T17:05:07.672073+08:00",
-  "identity": "🪞幻影膠囊",
-  "sha256_identity": "70a7bafbe3268e5b9fe72e0d91a370746ab6df38e4638a4d070240e5810a20b3",
-  "conversion_loop": ["Conversation","MarkdownSeed","SVG","WebP","GIF","MP4","HTML","Excel","TSV","CSV","JSON","PDF","EmbeddedVisual","SHA256Identity","Manifest","Locator","Snapshot","ReverseChain","Package"],
-  "same_identity_actions": ["顯影","保存狀態","建立快照","還原快照"]
+  "snapshot_id": "lk_system_world_capsule_migration_v7",
+  "timestamp": "2026-08-03T10:54:00+08:00",
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "default_branch": "master",
+  "status": {
+    "PUBLIC_REPO": true,
+    "PUBLIC_TEMPLATE_DEFINED": true,
+    "PRIVATE_CORE_INCLUDED": false,
+    "REVERSIBLE_CONDITIONS_DECLARED": true,
+    "A_EQUALS_A": true,
+    "ACTIONS_11_DOCUMENTED": true,
+    "NAMESPACE_DECLARED": true,
+    "FORMAL_NAMESPACE_LKSYSTEM": true,
+    "NAMESPACE_SELF_DESCRIPTION": true,
+    "PROTOCOL_DEFINED": true,
+    "LKMINI_ROOT_PROTOCOL_CORRECT": true,
+    "LKMINI_SHA256_ANCHORED": true,
+    "ROOT_CHAIN_COMPLETE": true,
+    "WORLD_MAP_DEFINED": true,
+    "CAPSULE_MIGRATION_GUIDE_DEFINED": true
+  },
+  "checked_conditions": {
+    "SHA256": "SHA256SUMS lists public template artifacts including WORLD_MAP.json and CAPSULE_MIGRATION.md.",
+    "MANIFEST": "MANIFEST.json lists required public files and boundaries, now including WORLD_MAP.json and CAPSULE_MIGRATION.md.",
+    "LOCATOR": "LOCATOR.json records root_protocol=LKMINI://, namespace_protocol=LKSystem://, and lkmini_metadata_sha256.",
+    "NAMESPACE": "NAMESPACE.json declares xmlns: LKSystem://PhantomCapsule, root_protocol: LKMINI://, and root_chain.",
+    "PROTOCOL": "PROTOCOL.json defines both protocols: LKMINI:// and LKSystem://.",
+    "SNAPSHOT": "SNAPSHOT.json records this public template state.",
+    "REVERSECHAIN": "ReverseChain.json records source lineage for the public template.",
+    "PACKAGE": "PACKAGE.md describes the public package boundary.",
+    "WORLD_MAP": "WORLD_MAP.json maps all 7 capsules in LKSystem (including private LKSystem.Seed) with migration priority and status.",
+    "CAPSULE_MIGRATION": "CAPSULE_MIGRATION.md provides per-repo NAMESPACE.json templates and migration checklists for all 6 remaining capsules."
+  }
 }

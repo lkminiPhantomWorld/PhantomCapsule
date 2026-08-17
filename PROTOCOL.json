@@ -1,0 +1,77 @@
+{
+  "protocols": {
+    "root_protocol": {
+      "scheme": "LKMINI://",
+      "full_name": "LKMINI Root Protocol",
+      "role": "唯一正式根協議",
+      "description": "LKMINI:// 是老K系統唯一正式根協議。它宣告系統本體根身份，所有節點、容器、入口與出口最終都回推至此協議根。"
+    },
+    "namespace_protocol": {
+      "scheme": "LKSystem://",
+      "full_name": "LKSystem Namespace Protocol",
+      "role": "命名空間定址協議",
+      "description": "LKSystem:// 是老K系統的命名空間定址協議。它用於定址系統內的正式節點（容器、入口、出口）。命名空間格式與 URI 一一對應：點（.）換成斜線（/）。"
+    }
+  },
+
+  "owner": "Kevin Yang／老K",
+  "axiom": "A=A",
+
+  "uri_format": {
+    "root": "LKMINI://",
+    "nodes": "LKSystem://<Domain>[/<Name>]"
+  },
+
+  "uri_table": [
+    {
+      "uri": "LKMINI://",
+      "resolves_to": "唯一系統本體根",
+      "namespace_id": "LKMINI",
+      "protocol": "root_protocol"
+    },
+    {
+      "uri": "LKSystem://",
+      "resolves_to": "唯一系統命名空間根",
+      "namespace_id": "LKSystem",
+      "protocol": "namespace_protocol"
+    },
+    {
+      "uri": "LKSystem://LKMINI",
+      "resolves_to": "唯一根節點",
+      "namespace_id": "LKSystem.LKMINI",
+      "protocol": "namespace_protocol"
+    },
+    {
+      "uri": "LKSystem://PhantomCapsule",
+      "resolves_to": "唯一正式容器（幻影膠囊）",
+      "namespace_id": "LKSystem.PhantomCapsule",
+      "protocol": "namespace_protocol"
+    },
+    {
+      "uri": "LKSystem://Entry/Welcome",
+      "resolves_to": "唯一正式入口",
+      "namespace_id": "LKSystem.Entry.Welcome",
+      "protocol": "namespace_protocol"
+    },
+    {
+      "uri": "LKSystem://Exit/RealDelivery",
+      "resolves_to": "唯一正式出口",
+      "namespace_id": "LKSystem.Exit.RealDelivery",
+      "protocol": "namespace_protocol"
+    }
+  ],
+
+  "mapping_rule": "LKSystem.<Domain>.<Name>  ←→  LKSystem://<Domain>/<Name>",
+
+  "rules": [
+    "LKMINI:// 是唯一正式根協議；所有節點最終回推至此根。",
+    "LKSystem:// 是命名空間定址協議；用於定址系統內各正式節點。",
+    "兩套協議各司其職，不得合併、混用或以其一取代另一。",
+    "協議只描述正式節點定址；工具名、平台名、臨時產物不得升格為系統節點。",
+    "URI 路徑與命名空間格式一一對應：點（.）換成斜線（/）。",
+    "A=A：任何 URI 必須回推到同一 LKMINI 根。"
+  ],
+
+  "repository": "lkminiPhantomWorld/PhantomCapsule",
+  "PRIVATE_CORE_INCLUDED": false
+}
