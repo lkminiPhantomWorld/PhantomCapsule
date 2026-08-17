@@ -1,7 +1,7 @@
 {
   "name": "PhantomCapsule",
   "display_name": "🪞幻影膠囊｜PhantomCapsule",
-  "version": "namespace_architecture_v6",
+  "version": "lk_system_world_capsule_migration_v7",
   "repository": "lkminiPhantomWorld/PhantomCapsule",
   "default_branch": "master",
   "root": "🧩LKMINI",
@@ -17,7 +17,8 @@
     "root_count": 1,
     "formal_container_count": 1,
     "action_count": 11,
-    "root_node": "🧩LKMINI",
+    "root_node": "LKSystem.LKMINI",
+    "root_node_display": "🧩LKMINI",
     "formal_container": "🪞幻影膠囊",
     "formal_entry": "🥳歡迎光臨唯一路口",
     "formal_exit": "🧾真實交付唯一出口",

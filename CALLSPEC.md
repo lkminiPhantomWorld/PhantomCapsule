@@ -22,14 +22,14 @@ Axiom: A=A
 | `tool_path` | string | e.g., `TOOLS/<file>` |
 | `action` | string | e.g., `read`, `render`, `export` |
 | `params` | object | action-specific (optional) |
-| `expect_sha256` | string | optional; if provided, must match MANIFEST.csv |
+| `expect_sha256` | string | optional; if provided, must match SHA256SUMS |
 
 ---
 
 ## Hard Rules
 
 1. **Read-only**: 不得改寫 `TOOLS/` 內任何檔案（含覆蓋、就地更新、刪除）
-2. **Verify-first**: 呼叫前必須以 `MANIFEST.csv` 驗證 sha256
+2. **Verify-first**: 呼叫前必須以 `SHA256SUMS` 驗證 sha256
 3. **Fail-closed**: 驗證不通過或路徑不存在 → 立即中止，不做降級推測
 
 ---
@@ -55,7 +55,7 @@ Axiom: A=A
 | Step | Description |
 |------|-------------|
 | 1 | Resolve absolute path under toolbox root — must start with `TOOLS/` |
-| 2 | Lookup `MANIFEST.csv` record for `tool_path` |
+| 2 | Lookup `SHA256SUMS` record for `tool_path` |
 | 3 | SHA256 verify |
 | 4 | Execute action in read-only mode |
 | 5 | Return structured response |
@@ -68,7 +68,7 @@ Axiom: A=A
 |-------|------|-------------|
 | `status` | string | `ok` \| `blocked` \| `error` |
 | `tool_path` | string | echoed from input |
-| `sha256` | string | from MANIFEST.csv |
+| `sha256` | string | from SHA256SUMS |
 | `action` | string | echoed from input |
 | `output_type` | string | `text` \| `binary` \| `path` \| `none` |
 | `output` | string | text content OR relative_path (for binary/path) |

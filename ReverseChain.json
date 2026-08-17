@@ -35,7 +35,7 @@
       "date": "2026-08-03",
       "source": "🌸真善美模式 formal identity standard — LKMINI:// root protocol and metadata_sha256 anchored",
       "repo": "lkminiPhantomWorld/PhantomCapsule",
-      "note": "Correction: LKMINI:// is the 唯一正式根協議 (formal root protocol); LKSystem:// is the 命名空間定址協議 (namespace addressing protocol). PROTOCOL.json updated to define both. LOCATOR.json and NAMESPACE.json updated with root_protocol=LKMINI://, lkmini_metadata_sha256=6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34. Root chain completed with 🪪身分｜Ident as final node.",
+      "note": "Correction: LKMINI:// is the 唯一正式根協議 (formal root protocol); LKSystem:// is the 命名空間定址協議 (namespace addressing protocol). PROTOCOL.json updated to define both. LOCATOR.json and NAMESPACE.json updated with root_protocol=LKMINI://, lkmini_metadata_sha256=412aabdb5985e8237be94a96204bad5abfa94c6e1de5ffd83077e465e85b84e3. Root chain completed with 🪪身分｜Ident as final node.",
       "A_EQUALS_A": true
     },
     {
