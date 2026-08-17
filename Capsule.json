@@ -1,0 +1,18 @@
+{
+  "owner": "Kevin Yang／老K",
+  "system": "🥃老K系統",
+  "root_node": "🧩LKMINI",
+  "formal_container": "🪞幻影膠囊",
+  "formal_path": "🥃老K系統／🧩LKMINI／🪞幻影膠囊",
+  "metadata_sha256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "root_protocol": "LKMINI://",
+  "axiom": "A=A",
+  "projection_rule": "Projection ≠ Identity",
+  "counts": {"SystemCount":1,"RootCount":1,"FormalContainerTypeCount":1,"SecondRootCount":0,"SecondFormalContainerCount":0,"ParallelIdentityCount":0,"EnglishParallelFormalPathCount":0,"PermanentDeleteCount":0},
+  "conversion_loop": ["Conversation","MarkdownSeed","SVG","WebP","GIF","MP4","HTML","Excel","TSV","CSV","JSON","PDF","EmbeddedVisual","SHA256Identity","Manifest","Locator","Snapshot","ReverseChain","Package"],
+  "same_identity_actions": ["顯影","保存狀態","建立快照","還原快照"],
+  "reverse_path": "🌱唯一真相源 → 🪞幻影膠囊 → 🧩LKMINI → A=A",
+  "github": {"repository":"lkminiPhantomWorld/PhantomCapsule","branch":"master"},
+  "google_drive": {"formal_container_file_id":"1vlJ_YgNZWfZGrfjPPgijoVZHoeuCGtTx","parent_id":"12ugpgRHkyUiAEUikGrFxBMxPx5uBnwsK"},
+  "updated_at": "2026-08-10T16:58:18.390567+08:00"
+}
