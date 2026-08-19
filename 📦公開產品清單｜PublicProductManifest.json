@@ -1,22 +1,53 @@
 {
-  "product": "🪞幻影膠囊｜PhantomCapsule",
-  "edition": "免費基本版",
-  "public_surface_type": "usable_free_capsule",
-  "current_loop": ["Content", "State", "Projection", "Snapshot", "Restore"],
-  "storage": "browser_localStorage",
-  "backend_required": false,
-  "future_slots": {
-    "AI_SLOT": "READY_EMPTY",
-    "PORTAL_SLOT": "READY_EMPTY"
-  },
-  "files": [
-    "README.md",
-    "🌐產品顯影.html",
-    "📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md",
-    "🔬公開驗證摘要｜PublicVerificationSummary.json",
-    "📦公開產品清單｜PublicProductManifest.json"
+  "名稱": "🪞幻影膠囊開源成果",
+  "持有人": "Kevin Yang",
+  "系統": "🥃老K系統",
+  "根協議": "LKMINI://",
+  "錨點SHA256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "版本時間AsiaTaipei": "2026-08-20T06:26:02+08:00",
+  "開源授權": "MIT",
+  "公開成果入口": "🌐產品顯影.html",
+  "公開檔案": [
+    {
+      "路徑": "🌐產品顯影.html",
+      "SHA256": "e874a5ac195cd637a4da07d5507bcc7e2a3568fd66520f7d375961792c972300"
+    },
+    {
+      "路徑": "Projection.svg",
+      "SHA256": "fda7c881d9d3d16912c36a24c3e1fa4748cd7ef6e0efe59087fedf95e175ba77"
+    },
+    {
+      "路徑": "🪞幻影膠囊",
+      "SHA256": "9ea12e1aca1de410bfe2c5ab4c43307659dea4b3e55b7403891969a3222d8e25"
+    },
+    {
+      "路徑": "README.md",
+      "SHA256": "82d49e2f023519d5c05b1ff5f302877dadad51ff2ac6f73b587278b11b9f7a1a"
+    },
+    {
+      "路徑": "NOTICE",
+      "SHA256": "9cb02d45bdcad0189116dfdb4e9334c0c1675226801b3396b2e5e1c30f09de6f"
+    },
+    {
+      "路徑": "LICENSE",
+      "SHA256": "10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067"
+    },
+    {
+      "路徑": "📌公開產品入口｜PublicProductEntry.md",
+      "SHA256": "e68c203d5aa44d82fe6de2d476d52c7ae2a2d36e273ac4d4ddedf00a5d8a5f5c"
+    },
+    {
+      "路徑": "📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md",
+      "SHA256": "7b31ced35c18fbd112b26077d49ccb4748c632e482be02d83795edaf23e6f088"
+    }
   ],
-  "internal_implementation_exposed": false,
-  "public_tools_repository": "ky46738-ops/LKMini.Public.tools",
-  "status": "完成"
+  "不公開": [
+    "製造方法",
+    "私有控制內容",
+    "內部研究資料",
+    "私有座標",
+    "內部恢復鏈",
+    "未授權來源"
+  ],
+  "顯影不等於本體識別": true
 }

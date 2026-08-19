@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675"><rect width="1200" height="675" rx="28" fill="#0b1522"/><rect x="40" y="40" width="1120" height="595" rx="24" fill="#101d2d" stroke="#b99b4b" stroke-width="3"/><text x="80" y="120" font-size="54" fill="#fff" font-family="sans-serif">🪞幻影膠囊</text><text x="80" y="175" font-size="28" fill="#dce8f5" font-family="sans-serif">🥃老K系統／🧩LKMINI／🪞幻影膠囊</text><text x="80" y="235" font-size="30" fill="#fff" font-family="sans-serif">內容 → 狀態 → 顯影 → 快照 → 還原</text><text x="80" y="300" font-size="26" fill="#85e6ae" font-family="sans-serif">A=A ｜ Projection ≠ Identity</text><text x="80" y="365" font-size="22" fill="#dce8f5" font-family="sans-serif">GitHub: lkminiPhantomWorld/PhantomCapsule@master</text><text x="80" y="415" font-size="22" fill="#dce8f5" font-family="sans-serif">Drive FileID: 1vlJ_YgNZWfZGrfjPPgijoVZHoeuCGtTx</text><text x="80" y="485" font-size="19" fill="#9ee6ff" font-family="sans-serif">metadata_sha256: 6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34</text><text x="80" y="555" font-size="24" fill="#85e6ae" font-family="sans-serif">🌱唯一真相源 → 🪞幻影膠囊 → 🧩LKMINI → A=A</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">🪞幻影膠囊開源成果</title>
+<desc id="desc">可直接使用的公開成果，不包含製造方法或私有資料。</desc>
+<rect width="1200" height="675" rx="28" fill="#0b1522"/>
+<rect x="40" y="40" width="1120" height="595" rx="24" fill="#101d2d" stroke="#b99b4b" stroke-width="3"/>
+<text x="80" y="130" font-size="54" fill="#ffffff" font-family="sans-serif">🪞 幻影膠囊開源成果</text>
+<text x="80" y="195" font-size="28" fill="#dce8f5" font-family="sans-serif">🥃老K系統／🧩LKMINI</text>
+<text x="80" y="285" font-size="34" fill="#ffffff" font-family="sans-serif">輸入 → 顯示 → 儲存 → 快照 → 還原</text>
+<text x="80" y="365" font-size="28" fill="#85e6ae" font-family="sans-serif">A=A ｜ 顯影不等於本體識別</text>
+<text x="80" y="445" font-size="25" fill="#dce8f5" font-family="sans-serif">只公開可直接使用的成果</text>
+<text x="80" y="500" font-size="25" fill="#dce8f5" font-family="sans-serif">不公開製造方法、私有控制內容或私有座標</text>
+<text x="80" y="575" font-size="19" fill="#9ee6ff" font-family="monospace">根協議 LKMINI:// ｜ 錨點 6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34</text>
+</svg>

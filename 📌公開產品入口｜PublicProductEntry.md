@@ -1,12 +1,11 @@
-# 📌公開產品入口｜Public Product Entry
+# 📌｜幻影膠囊開源成果入口｜PublicProductEntry
 
-🪞幻影膠囊是商業產品成果公開面。
+直接開啟：
 
-- 看成果：`🌐產品顯影.html`
-- 看公開邊界：`📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md`
-- 看驗證摘要：`🔬公開驗證摘要｜PublicVerificationSummary.json`
-- 看公開產品清單：`📦公開產品清單｜PublicProductManifest.json`
+- [`🌐產品顯影.html`](./🌐產品顯影.html)
 
-免費開源福利小工具另在 `ky46738-ops/LKMini.Public.tools`。
+這是可直接使用的公開成果。
 
-公開展示不等於核心技術開源。
+使用者可以輸入、顯示、儲存、建立快照、還原、匯出與匯入自己的資料。資料預設只保存在目前瀏覽器。
+
+本公開位置不包含製造方法、私有控制內容、內部研究資料、私有座標或未授權來源。
