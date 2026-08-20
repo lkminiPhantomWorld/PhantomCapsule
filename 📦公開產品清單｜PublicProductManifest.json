@@ -1,47 +1,55 @@
 {
-  "名稱": "🪞幻影膠囊開源成果",
-  "持有人": "Kevin Yang",
-  "系統": "🥃老K系統",
-  "根協議": "LKMINI://",
-  "錨點SHA256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
-  "版本時間AsiaTaipei": "2026-08-20T06:26:02+08:00",
-  "開源授權": "MIT",
-  "公開成果入口": "🌐產品顯影.html",
-  "公開檔案": [
+  "Schema": "LKMINI://公開成果清單/1",
+  "Identity": "LKMINI://開源成果/幻影膠囊",
+  "Name": "🪞幻影膠囊開源成果",
+  "Owner": "Kevin Yang",
+  "System": "🥃老K系統",
+  "RootProtocol": "LKMINI://",
+  "RootReference": "🧩LKMINI",
+  "AnchorSHA256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "TimestampAsiaTaipei": "2026-08-21T01:33:00+08:00",
+  "License": "MIT",
+  "PublicResultEntry": "🌐產品顯影.html",
+  "PublicProjectionURL": "https://lkminiphantomworld.github.io/PhantomCapsule/%F0%9F%8C%90%E7%94%A2%E5%93%81%E9%A1%AF%E5%BD%B1.html",
+  "FrozenContentFiles": [
     {
-      "路徑": "🌐產品顯影.html",
-      "SHA256": "e874a5ac195cd637a4da07d5507bcc7e2a3568fd66520f7d375961792c972300"
-    },
-    {
-      "路徑": "Projection.svg",
-      "SHA256": "fda7c881d9d3d16912c36a24c3e1fa4748cd7ef6e0efe59087fedf95e175ba77"
-    },
-    {
-      "路徑": "🪞幻影膠囊",
-      "SHA256": "9ea12e1aca1de410bfe2c5ab4c43307659dea4b3e55b7403891969a3222d8e25"
-    },
-    {
-      "路徑": "README.md",
-      "SHA256": "82d49e2f023519d5c05b1ff5f302877dadad51ff2ac6f73b587278b11b9f7a1a"
+      "路徑": "LICENSE",
+      "SHA256": "10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067"
     },
     {
       "路徑": "NOTICE",
       "SHA256": "9cb02d45bdcad0189116dfdb4e9334c0c1675226801b3396b2e5e1c30f09de6f"
     },
     {
-      "路徑": "LICENSE",
-      "SHA256": "10b30a9ce65b4da3d0a74f6dc3d1baf65d3f815efd66ba1fa5eff604526bb067"
+      "路徑": "Projection.svg",
+      "SHA256": "fda7c881d9d3d16912c36a24c3e1fa4748cd7ef6e0efe59087fedf95e175ba77"
+    },
+    {
+      "路徑": "README.md",
+      "SHA256": "e566300cd65021224382bab356be5dd46cc53c090dbaabc88fdd77e3208c3abf"
+    },
+    {
+      "路徑": "🌐產品顯影.html",
+      "SHA256": "e874a5ac195cd637a4da07d5507bcc7e2a3568fd66520f7d375961792c972300"
     },
     {
       "路徑": "📌公開產品入口｜PublicProductEntry.md",
-      "SHA256": "e68c203d5aa44d82fe6de2d476d52c7ae2a2d36e273ac4d4ddedf00a5d8a5f5c"
+      "SHA256": "983c46a8d9f9c6304612e55100895066357d97653a63f7e06b92e038b43a434c"
     },
     {
       "路徑": "📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md",
-      "SHA256": "7b31ced35c18fbd112b26077d49ccb4748c632e482be02d83795edaf23e6f088"
+      "SHA256": "912a794f861540c414e0e7dc40f58f5d7a14ce4357628f2210a01a249e8a0817"
+    },
+    {
+      "路徑": "🪞幻影膠囊",
+      "SHA256": "e5c98619c5bbe83035c2465e4e8af56bcee833a22265fc710bd64e5df4a82dbd"
     }
   ],
-  "不公開": [
+  "ControlFiles": [
+    "📦公開產品清單｜PublicProductManifest.json",
+    "🔬公開驗證摘要｜PublicVerificationSummary.json"
+  ],
+  "Excluded": [
     "製造方法",
     "私有控制內容",
     "內部研究資料",
@@ -49,5 +57,7 @@
     "內部恢復鏈",
     "未授權來源"
   ],
-  "顯影不等於本體識別": true
+  "CurrentBranchPathCount": 10,
+  "WorkflowFileCount": 0,
+  "ProjectionIsIdentity": false
 }

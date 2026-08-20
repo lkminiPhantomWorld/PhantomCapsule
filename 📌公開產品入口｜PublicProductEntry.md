@@ -1,8 +1,7 @@
 # 📌｜幻影膠囊開源成果入口｜PublicProductEntry
 
-直接開啟：
-
-- [`🌐產品顯影.html`](./🌐產品顯影.html)
+- 公開成果檔：[`🌐產品顯影.html`](./🌐產品顯影.html)
+- 公開顯影網址：https://lkminiphantomworld.github.io/PhantomCapsule/%F0%9F%8C%90%E7%94%A2%E5%93%81%E9%A1%AF%E5%BD%B1.html
 
 這是可直接使用的公開成果。
 
