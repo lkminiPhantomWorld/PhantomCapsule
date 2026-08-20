@@ -1,0 +1,128 @@
+name: 🪞幻影膠囊開源成果顯影
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/🪞｜幻影膠囊開源成果顯影.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: phantom-capsule-public-result
+  cancel-in-progress: false
+
+jobs:
+  publish-and-clean:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 讀取目前成果
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: 建立公開顯影
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/phantom-site
+          mkdir -p /tmp/phantom-site
+          cp '🌐產品顯影.html' /tmp/phantom-site/index.html
+
+      - name: 啟用顯影位置
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: 上傳顯影成果
+        id: upload
+        continue-on-error: true
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/phantom-site
+
+      - name: 發布顯影成果
+        id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: 同步公開首頁
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          if [[ "$PAGE_URL" == https://* ]]; then
+            curl -fsS \
+              -X PATCH \
+              -H 'Accept: application/vnd.github+json' \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}" \
+              -d "$(python - <<PY
+import json,os
+print(json.dumps({'homepage':os.environ['PAGE_URL']},ensure_ascii=False))
+PY
+)" >/dev/null
+          fi
+
+      - name: 恢復無父成果根
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          safe_files=(
+            'LICENSE'
+            'NOTICE'
+            'Projection.svg'
+            'README.md'
+            '🌐產品顯影.html'
+            '📌公開產品入口｜PublicProductEntry.md'
+            '📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md'
+            '📦公開產品清單｜PublicProductManifest.json'
+            '🔬公開驗證摘要｜PublicVerificationSummary.json'
+            '🪞幻影膠囊'
+          )
+          rm -rf /tmp/phantom-safe
+          mkdir -p /tmp/phantom-safe
+          for file in "${safe_files[@]}"; do
+            test -f "$file"
+            mkdir -p "/tmp/phantom-safe/$(dirname "$file")"
+            cp -p "$file" "/tmp/phantom-safe/$file"
+          done
+          git config user.name 'Kevin Yang'
+          git config user.email '242197477+ky46738-ops@users.noreply.github.com'
+          git checkout --orphan phantom-public-result-root
+          git rm -rf . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/phantom-safe/. .
+          git add --all
+          transition_time="$(TZ=Asia/Taipei date '+%Y-%m-%dT%H:%M:%S%z')"
+          GIT_AUTHOR_DATE="$transition_time" GIT_COMMITTER_DATE="$transition_time" \
+            git commit -m "🪞 幻影膠囊開源成果顯影乾淨根｜${transition_time}"
+          test "$(git rev-list --parents -n 1 HEAD | awk '{print NF-1}')" = '0'
+          test "$(git ls-tree -r --name-only HEAD | wc -l | tr -d ' ')" = '10'
+          git push --force origin HEAD:refs/heads/master
+          while read -r _ ref; do
+            branch="${ref#refs/heads/}"
+            if [ "$branch" != 'master' ]; then
+              git push origin --delete "$branch"
+            fi
+          done < <(git ls-remote --heads origin)
+          while read -r _ ref; do
+            tag="${ref#refs/tags/}"
+            git push origin --delete "$tag"
+          done < <(git ls-remote --tags origin | awk '!/\^\{\}$/')
