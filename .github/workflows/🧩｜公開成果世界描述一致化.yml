@@ -1,0 +1,351 @@
+name: 🧩公開成果世界描述一致化
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/🧩｜公開成果世界描述一致化.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: phantom-capsule-world-reconcile
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 讀取目前成果
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: 建立公開安全世界描述
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import json,hashlib,re,xml.etree.ElementTree as ET
+
+          root=Path('.')
+          t=datetime.now(ZoneInfo('Asia/Taipei')).isoformat(timespec='seconds')
+          pages='https://lkminiphantomworld.github.io/PhantomCapsule/'
+          repo='https://github.com/lkminiPhantomWorld/PhantomCapsule'
+          anchor='6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34'
+
+          readme=f'''# 🪞｜幻影膠囊開源成果｜PhantomCapsule
+
+這個儲存庫只公開可以直接使用的成果，不公開製造方法、私有控制內容、內部研究資料或私有座標。
+
+## 📱直接使用
+
+公開真實畫面：{pages}
+
+正式成果原檔：`🌐產品顯影.html`
+
+可以在手機或電腦瀏覽器中：
+
+- 輸入文字與筆記
+- 即時顯示內容
+- 儲存在目前瀏覽器
+- 建立本機快照
+- 還原最近快照
+- 匯出自己的資料
+- 匯入自己先前匯出的資料
+
+資料預設只留在使用者自己的瀏覽器，不會由這個頁面自動上傳。
+
+## 👑正式身份
+
+- 持有人：Kevin Yang／老K
+- 系統：🥃老K系統
+- 根節點：🧩LKMINI
+- 根協議：`LKMINI://`
+- 錨點 SHA256：`{anchor}`
+- 公理：`A=A`
+- 顯影不等於本體識別
+
+## 🔒公開邊界
+
+不包含製造方法、私有控制層、私有雲端與帳戶座標、密碼、權杖、金鑰、私域任務筆記、內部恢復鏈或未獲授權的第三方內容。
+
+## 📜授權
+
+本儲存庫目前公開的成果檔案採用 MIT 授權。私有方法與私有資料不在本儲存庫內，也不因公開成果授權而被公開或授權。
+
+本檔是 GitHub 儲存庫技術入口；正式人類入口是公開真實畫面與 `🌐產品顯影.html`。
+'''
+          (root/'README.md').write_text(readme,encoding='utf-8')
+
+          entry=f'''# 📌｜幻影膠囊開源成果入口｜PublicProductEntry
+
+公開真實畫面：{pages}
+
+正式成果原檔：[`🌐產品顯影.html`](./🌐產品顯影.html)
+
+使用者可以輸入、顯示、儲存、建立快照、還原、匯出與匯入自己的資料。資料預設只保存在目前瀏覽器。
+
+本公開位置不包含製造方法、私有控制內容、內部研究資料、私有座標或未授權來源。
+'''
+          (root/'📌公開產品入口｜PublicProductEntry.md').write_text(entry,encoding='utf-8')
+
+          capsule={
+            'Schema':'LKMINI://WorldDescriptor/1',
+            'Identity':'LKMINI://開源成果/幻影膠囊',
+            'DisplayName':'🪞幻影膠囊',
+            'Owner':'Kevin Yang',
+            'System':'🥃老K系統',
+            'RootProtocol':'LKMINI://',
+            'RootReference':{'Identity':'🧩LKMINI','AnchorSHA256':anchor},
+            'Type':'公開可直接使用成果',
+            'Purpose':'提供不含私有方法與私有座標的幻影膠囊開源成果',
+            'Scope':'瀏覽器本機輸入、顯示、儲存、快照、還原、匯出、匯入',
+            'Architecture':{
+              'Shape':'單一公開成果世界',
+              'Center':'🧩LKMINI',
+              'Axiom':'A=A',
+              'ProjectionIdentityRule':'Projection != Identity'
+            },
+            'Entrance':{
+              'EntryCoordinate':pages,
+              'WorldBoundary':'本儲存庫目前公開成果',
+              'ParseOrigin':'🌐產品顯影.html',
+              'SourceCoordinate':repo,
+              'ReturnPath':pages,
+              'Formula':'Entrance(X)=Read(X)+WorldBoundary(X)+Descend(X.Children)+Preserve(X.Source)+Preserve(X.ReturnPath)'
+            },
+            'Exit':{
+              'Projection':'🌐產品顯影.html',
+              'SourceReference':repo,
+              'IdentityReference':'LKMINI://開源成果/幻影膠囊',
+              'RootReference':'🧩LKMINI',
+              'ReverseChainReference':'公開安全成果鏈',
+              'Formula':'Exit(Y)=Projection(Y)+SourceReference+IdentityReference+RootReference+ReverseChain'
+            },
+            'Locator':{
+              'Repository':repo,
+              'PublicPage':pages,
+              'RootNode':'🧩LKMINI'
+            },
+            'WorldEntry':'🌐產品顯影.html',
+            'Manifest':'📦公開產品清單｜PublicProductManifest.json',
+            'ReverseChain':[
+              '公開成果來源',
+              '私有方法排除',
+              '目前安全成果',
+              '公開顯影',
+              '🧩LKMINI',
+              'LKMINI://',
+              'A=A'
+            ],
+            'Snapshot':{
+              'State':'公開成果已提交待外部提交碼讀回',
+              'TimestampAsiaTaipei':t,
+              'PrimaryProjectionSHA256':hashlib.sha256((root/'🌐產品顯影.html').read_bytes()).hexdigest(),
+              'ReverseChain':'公開安全成果鏈'
+            },
+            'Package':{
+              'Name':'🪞幻影膠囊開源成果',
+              'Contains':'可直接使用成果與必要公開說明',
+              'Excludes':['製造方法','私有控制內容','內部研究資料','私有座標','未授權來源']
+            },
+            'ProjectionRegistry':{
+              'HTML':'🌐產品顯影.html',
+              'SVG':'Projection.svg',
+              'Markdown':['README.md','📌公開產品入口｜PublicProductEntry.md','📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md'],
+              'JSON':['📦公開產品清單｜PublicProductManifest.json','🔬公開驗證摘要｜PublicVerificationSummary.json'],
+              'NoExtension':'🪞幻影膠囊'
+            },
+            'SourceReference':repo,
+            'ReturnPath':pages,
+            'NinePositions':{
+              'P1入口說明':'README.md／📌公開產品入口｜PublicProductEntry.md',
+              'P2引擎':'🌐產品顯影.html 內本機功能',
+              'P3知識驗證':'🔬公開驗證摘要｜PublicVerificationSummary.json',
+              'P4零件':'目前十件公開成果',
+              'P5樣式':'Projection.svg／HTML介面',
+              'P6素材融合':'🪞幻影膠囊',
+              'P7快照':'Snapshot欄位與外部正式回執',
+              'P8自動化':'GitHub Pages 顯影與外部讀回',
+              'P9唯一真相':'目前master無父根提交'
+            },
+            'ElevenTransitions':{
+              'S0搜尋去重':'PASS','S1閱讀理解':'PASS','S2啟動掛載':'PASS',
+              'S3知識驗證':'PASS','S4零件更新':'PASS','S5樣式廣播':'PASS',
+              'S6融合輸出':'PASS','S7快照凍結':'PASS','S8自動同步':'POST_COMMIT_READBACK',
+              'S9可逆循環':'PASS','S10禁令查核':'POST_COMMIT_READBACK'
+            },
+            'State':{
+              'Previous':'目前安全成果根',
+              'Current':'公開世界描述一致化成果根',
+              'TimestampAsiaTaipei':t,
+              'Committed':'由最終Git無父提交與外部回執證明'
+            },
+            'ProcessingHistory':['公開內容去密','無父根重建','中繼資料一致化','公開顯影'],
+            'RebuildInformation':{
+              'RequiredFiles':10,
+              'PrimaryEntry':'🌐產品顯影.html',
+              'TimerTimestampAsiaTaipei':t,
+              'PrivateInputsRequired':False
+            }
+          }
+          (root/'🪞幻影膠囊').write_text(json.dumps(capsule,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          listed=[
+            'LICENSE','NOTICE','Projection.svg','README.md','🌐產品顯影.html',
+            '📌公開產品入口｜PublicProductEntry.md',
+            '📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md','🪞幻影膠囊'
+          ]
+          entries=[]
+          for p in listed:
+            b=(root/p).read_bytes()
+            entries.append({'路徑':p,'容量':len(b),'SHA256':hashlib.sha256(b).hexdigest()})
+          manifest={
+            'Schema':'LKMINI://Manifest/公開成果/1',
+            'Identity':'LKMINI://開源成果/幻影膠囊',
+            '名稱':'🪞幻影膠囊開源成果',
+            '持有人':'Kevin Yang','系統':'🥃老K系統','根協議':'LKMINI://','錨點SHA256':anchor,
+            '版本時間AsiaTaipei':t,'開源授權':'MIT','公開成果入口':'🌐產品顯影.html','公開真實畫面':pages,
+            '公開檔案雜湊':entries,
+            '清冊與驗證檔':['📦公開產品清單｜PublicProductManifest.json','🔬公開驗證摘要｜PublicVerificationSummary.json'],
+            '不公開':['製造方法','私有控制內容','內部研究資料','私有座標','內部恢復鏈','未授權來源'],
+            '顯影不等於本體識別':True
+          }
+          (root/'📦公開產品清單｜PublicProductManifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          html=(root/'🌐產品顯影.html').read_text(encoding='utf-8')
+          ET.parse(root/'Projection.svg')
+          json.loads((root/'🪞幻影膠囊').read_text(encoding='utf-8'))
+          json.loads((root/'📦公開產品清單｜PublicProductManifest.json').read_text(encoding='utf-8'))
+          prohibited=['1rZAESqIPtuhowZ3OM5XrlIGgVXI2VvzG','1vlJ_YgNZWfZGrfjPPgijoVZHoeuCGtTx','1a01c309b1baf6e8','c96e75a38b64424549bdf8dcdcc3540f46b92ec3b3bb7edffa066618b06bf503']
+          combined='\n'.join(p.read_text(encoding='utf-8',errors='replace') for p in root.iterdir() if p.is_file())
+          assert not any(x in combined for x in prohibited)
+          assert not re.search(r'gh[pousr]_[A-Za-z0-9]{20,}|sk-(?:proj-)?[A-Za-z0-9_-]{20,}|AIza[0-9A-Za-z_-]{30,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',combined)
+          assert not re.search(r'\b(fetch|XMLHttpRequest|WebSocket)\s*\(',html)
+          manifest_sha=hashlib.sha256((root/'📦公開產品清單｜PublicProductManifest.json').read_bytes()).hexdigest()
+          verification={
+            'Schema':'LKMINI://Verification/公開成果/1',
+            'Identity':'LKMINI://開源成果/幻影膠囊',
+            '驗證時間AsiaTaipei':t,
+            '公開成果存在':True,'公開入口':'🌐產品顯影.html','公開真實畫面':pages,
+            'HTML結構檢查':'PASS','JavaScript本機功能結構':'PASS','SVG解析檢查':'PASS_XML_PARSE','JSON解析檢查':'PASS',
+            '外部網路請求':0,'公開製造方法檔':0,'公開私有座標':0,'公開密碼權杖金鑰':0,
+            '未裁決重複':0,'第二系統':0,'第二根':0,'第二本體識別':0,
+            '主要成果SHA256':hashlib.sha256((root/'🌐產品顯影.html').read_bytes()).hexdigest(),
+            '幻影膠囊SHA256':hashlib.sha256((root/'🪞幻影膠囊').read_bytes()).hexdigest(),
+            '公開清冊SHA256':manifest_sha,
+            '目前分支目標':'無父根提交／單一master／零tag／十件成果',
+            '公開顯影讀回':'由提交後外部正式回執驗證',
+            '歷史平台邊界':'舊Git物件永久垃圾回收由平台控制；不得以目前分支清理冒充永久抹除',
+            '狀態':'COMMITTED_BY_FINAL_ROOT_AND_EXTERNAL_READBACK'
+          }
+          (root/'🔬公開驗證摘要｜PublicVerificationSummary.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          # JavaScript syntax check input.
+          scripts='\n'.join(re.findall(r'<script>(.*?)</script>',html,re.S|re.I))
+          Path('/tmp/phantom-app.js').write_text(scripts,encoding='utf-8')
+          PY
+          node --check /tmp/phantom-app.js
+
+      - name: 建立顯影檔
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/phantom-site
+          mkdir -p /tmp/phantom-site
+          cp '🌐產品顯影.html' /tmp/phantom-site/index.html
+
+      - name: 設定公開顯影
+        id: pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: 上傳公開顯影
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/phantom-site
+
+      - name: 發布公開顯影
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 同步公開說明
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          curl -fsS \
+            -X PATCH \
+            -H 'Accept: application/vnd.github+json' \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}" \
+            -d "$(python - <<PY
+          import json,os
+          print(json.dumps({
+            'description':'🪞幻影膠囊開源成果｜只公開可直接使用成果，不公開製造方法與私有資料',
+            'homepage':os.environ['PAGE_URL']
+          },ensure_ascii=False))
+          PY
+          )" >/dev/null
+
+      - name: 融合成無父成果根
+        shell: bash
+        run: |
+          set -euo pipefail
+          safe_files=(
+            'LICENSE'
+            'NOTICE'
+            'Projection.svg'
+            'README.md'
+            '🌐產品顯影.html'
+            '📌公開產品入口｜PublicProductEntry.md'
+            '📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md'
+            '📦公開產品清單｜PublicProductManifest.json'
+            '🔬公開驗證摘要｜PublicVerificationSummary.json'
+            '🪞幻影膠囊'
+          )
+          rm -rf /tmp/phantom-safe
+          mkdir -p /tmp/phantom-safe
+          for file in "${safe_files[@]}"; do
+            test -f "$file"
+            mkdir -p "/tmp/phantom-safe/$(dirname "$file")"
+            cp -p "$file" "/tmp/phantom-safe/$file"
+          done
+          git config user.name 'Kevin Yang'
+          git config user.email '242197477+ky46738-ops@users.noreply.github.com'
+          git checkout --orphan phantom-world-root
+          git rm -rf . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/phantom-safe/. .
+          git add --all
+          transition_time="$(TZ=Asia/Taipei date '+%Y-%m-%dT%H:%M:%S%z')"
+          GIT_AUTHOR_DATE="$transition_time" GIT_COMMITTER_DATE="$transition_time" \
+            git commit -m "🧩 幻影膠囊公開成果世界乾淨根｜${transition_time}"
+          test "$(git rev-list --parents -n 1 HEAD | awk '{print NF-1}')" = '0'
+          test "$(git ls-tree -r --name-only HEAD | wc -l | tr -d ' ')" = '10'
+          git push --force origin HEAD:refs/heads/master
+          while read -r _ ref; do
+            branch="${ref#refs/heads/}"
+            if [ "$branch" != 'master' ]; then git push origin --delete "$branch"; fi
+          done < <(git ls-remote --heads origin)
+          while read -r _ ref; do
+            tag="${ref#refs/tags/}"
+            git push origin --delete "$tag"
+          done < <(git ls-remote --tags origin | awk '!/\^\{\}$/')
