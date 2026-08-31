@@ -1,0 +1,11 @@
+{
+  "Identity": "LKMINI://engine/GoogleDriveExactSearchEngine",
+  "WorldEntry": "🥳歡迎光臨",
+  "ReverseChain": [
+    "LKMINI://engine/GoogleDriveExactSearchEngine",
+    "Manifest",
+    "LKMINI://",
+    "🧩LKMINI",
+    "A=A"
+  ]
+}
