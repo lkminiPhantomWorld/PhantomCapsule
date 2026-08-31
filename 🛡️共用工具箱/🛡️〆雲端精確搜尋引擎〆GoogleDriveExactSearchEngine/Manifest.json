@@ -1,0 +1,38 @@
+{
+  "Identity": "LKMINI://engine/GoogleDriveExactSearchEngine",
+  "Kind": "Engine",
+  "DeliveryTimestampAsiaTaipei": "2026-08-16T14:21:25+08:00",
+  "Members": [
+    {
+      "Path": "🛡️〆Drive證據〆DriveEvidence.json",
+      "ByteSize": 180,
+      "SHA256": "dd4b93236bb37276393268e13022e3774c35ef1ec7cfd0129f48dc55c8daa581"
+    },
+    {
+      "Path": "♾️〆反向回推〆ReverseChain.json",
+      "ByteSize": 340,
+      "SHA256": "decc81f50ffb8c2a9e55de5fc62b3b6d8e5fe937673821fde021c2f40247658d"
+    },
+    {
+      "Path": "📖〆雲端精確搜尋引擎說明〆GoogleDriveExactSearchEngineManual.md",
+      "ByteSize": 198,
+      "SHA256": "0a447e7e0dd143e95b4684f62ea5abb270435c790e285a9166b27907445cc724"
+    },
+    {
+      "Path": "🔬〆暴力驗收〆BrutalAcceptance.json",
+      "ByteSize": 253,
+      "SHA256": "01ad8c2b2623c1ee7f4930915d2c04448a9052a0b18e9015a210ba482eebc8a9"
+    },
+    {
+      "Path": "🕓〆交付時間〆DeliveryTimestamp.txt",
+      "ByteSize": 26,
+      "SHA256": "92162a5ec01c28d973398f2d70cb4d1d77cd5a344d7517e7e88131fff39a3927"
+    },
+    {
+      "Path": "🥊〆身分卡〆Identity.json",
+      "ByteSize": 480,
+      "SHA256": "2567841559623944b40311c220d7fb9f74a8e682c19d147cf4d5d1141f71542c"
+    }
+  ],
+  "ReverseChain": "♾️〆反向回推〆ReverseChain.json"
+}
