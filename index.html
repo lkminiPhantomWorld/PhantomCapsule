@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🪞幻影膠囊｜PhantomCapsule — 上架頁</title>
+<style>
+  :root{--bg:#08080f;--panel:#12121f;--line:#26263a;--gold:#e8c477;--phantom:#8b7bff;--mint:#5eead4;--txt:#eef0f7;--dim:#9aa0b6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang TC","Noto Sans TC",system-ui,sans-serif;background:radial-gradient(1000px 500px at 50% -5%,#1b1636,var(--bg) 60%);color:var(--txt);line-height:1.7;padding:30px 18px 70px}
+  .wrap{max-width:680px;margin:0 auto;text-align:center}
+  .badge{display:inline-flex;gap:6px;font-size:12px;letter-spacing:.5px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--mint);background:rgba(94,234,212,.06)}
+  h1{font-size:44px;margin:22px 0 8px;background:linear-gradient(100deg,var(--gold),var(--phantom));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lead{color:var(--dim);font-size:17px;max-width:520px;margin:0 auto 8px}
+  .price{margin:26px 0 10px;font-size:15px;color:var(--dim)}
+  .price b{font-size:30px;color:var(--gold);vertical-align:-2px}
+  .cta{display:inline-block;margin:14px 8px;padding:16px 34px;border-radius:14px;font-weight:700;letter-spacing:.5px;text-decoration:none}
+  .cta.buy{color:#0a0a12;background:linear-gradient(100deg,var(--gold),#f2d79a)}
+  .cta.demo{color:var(--txt);border:1px solid var(--line);background:var(--panel)}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;margin:40px 0;text-align:left}
+  @media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:linear-gradient(180deg,var(--panel),#0e0e18);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .card h3{font-size:16px;margin-bottom:6px;color:var(--txt)}
+  .card p{font-size:14px;color:var(--dim)}
+  .ico{font-size:22px}
+  .verify{margin-top:34px;padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(94,234,212,.04);text-align:left}
+  .verify .k{color:var(--dim);font-size:12px}
+  .hash{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--mint);word-break:break-all}
+  .foot{color:var(--dim);font-size:12px;margin-top:36px;line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">🪞 PHANTOM CAPSULE · 幻界 Phantom World</span>
+  <h1>🪞 幻影膠囊</h1>
+  <p class="lead">同一份內容，人看得懂、機器讀得動、找得回、驗得了、還能顯影成任何畫面。<br>顯影可變，本體不失 — <b>A == A</b>。</p>
+
+  <div class="price">授權方式 · <b>MIT</b> · 開源公開版</div>
+  <a class="cta buy" href="#">🛒 取得膠囊 / 上架</a>
+  <a class="cta demo" href="顯示面.html">👁 看顯示面 Demo</a>
+
+  <div class="grid">
+    <div class="card"><div class="ico">👁</div><h3>人可看</h3><p>一張漂亮的顯示面，打開就懂，直接當產品門面。</p></div>
+    <div class="card"><div class="ico">🤖</div><h3>機器可讀</h3><p>Manifest／SHA256／回推鏈，程式可解析、可驗證。</p></div>
+    <div class="card"><div class="ico">📍</div><h3>可定位可回推</h3><p>Locator 定位、ReverseChain 回推來源，永遠找得回本體。</p></div>
+    <div class="card"><div class="ico">🔒</div><h3>本體不可竊改</h3><p>SHA256 上鎖；顯影被改，本體仍能證明 A==A。</p></div>
+  </div>
+
+  <div class="verify">
+    <div class="k">身分雜湊（正文 SHA256）</div>
+    <div class="hash">8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014</div>
+    <div class="k" style="margin-top:10px">根雜湊 RootSHA256</div>
+    <div class="hash">6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34</div>
+  </div>
+
+  <div class="foot">
+    主權持有人 🥃老K ｜ 本體指向 🥃LKMINI ｜ 06 唯一出口<br>
+    進入唯一路口 · <a href="https://lkminiphantomworld.github.io/welcome" style="color:var(--gold)">lkminiphantomworld.github.io/welcome</a><br>
+    © 2026 🥃老K · LKMINI / PhantomWorld · MIT
+  </div>
+</div>
+</body>
+</html>

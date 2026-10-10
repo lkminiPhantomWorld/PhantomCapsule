@@ -1,0 +1,12 @@
+{
+  "snapshot": "🪞幻影膠囊公開開源快照",
+  "time": "20260714-0448_TPE",
+  "capsule_identity_hash": "8a2681183b3ad85117e4656769b59af6ef0c69085de472a177d7a6df7ad7c014",
+  "sovereign": "🥃老K",
+  "identity_backref": "🥃LKMINI",
+  "root_hash": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "freeze_state": "候選凍結",
+  "public_state": "可公開",
+  "private_core_included": false,
+  "exit_06": "LOCATOR://PHANTOMWORLD/PUBLIC/PHANTOM_CAPSULE/06"
+}
