@@ -1,0 +1,13 @@
+{
+  "Identity": "LKMINI://engine/GoogleDriveExactSearchEngine",
+  "Kind": "Engine",
+  "Members": [
+    "☁️｜Drive證據｜DriveEvidence.json",
+    "♾️｜反向回推｜ReverseChain.json",
+    "📖｜雲端精確搜尋引擎說明｜GoogleDriveExactSearchEngineManual.md",
+    "🔬｜暴力驗收｜BrutalAcceptance.json",
+    "🕒｜交付時間｜DeliveryTimestamp.txt",
+    "🪪｜身分卡｜Identity.json"
+  ],
+  "ReverseChain": "♾️｜反向回推｜ReverseChain.json"
+}

@@ -1,0 +1,32 @@
+{
+  "Identity": "LKMINI://engine/ArchiveAbsorbEngine",
+  "Type": "Engine",
+  "Version": "v01",
+  "Status": "READY",
+  "Owner": "Kevin Yang",
+  "Root": "🧩LKMINI",
+  "Axiom": "A=A",
+  "Policy": "LKMINI://sync/archive-then-absorb-policy/20260830-192955_TPE",
+  "TruthTarget": "⭐️唯一真相 │ SingleSourceOfTruth",
+  "Flow": [
+    "UNZIP",
+    "IDENTIFY",
+    "CLASSIFY",
+    "ABSORB_TO_TRUTH",
+    "SEAL_EVIDENCE",
+    "VERIFY"
+  ],
+  "Classify": {
+    "CanonicalCandidate": "進唯一真相",
+    "AbsorbableLegacy": "抽取後保留原件",
+    "EvidenceOnly": "不進本體",
+    "NegativeSample": "保留供禁令與測試",
+    "ContaminationCandidate": "隔離、不外推"
+  },
+  "ReverseChain": "ArchiveAbsorbEngine → ArchiveThenAbsorbPolicy → BleedingStopSyncLock → ⭐️唯一真相 → 🧩LKMINI → A=A",
+  "Immutable": [
+    "不覆蓋舊檔",
+    "不刪除錯誤記錄",
+    "不把 Projection 冒充成 Identity"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Emoji": "🛡️",
+  "中文名稱": "雲端精確搜尋引擎",
+  "英文機械語": "GoogleDriveExactSearchEngine",
+  "Identity": "LKMINI://engine/GoogleDriveExactSearchEngine",
+  "Type": "Engine",
+  "Root": "🧩LKMINI",
+  "RootSHA256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "DeliveryTimestampAsiaTaipei": "2026-08-16T14:21:25+08:00",
+  "Status": "PASS_ZERO_RESULTS",
+  "Summary": "以測試碼及四個精確名稱搜尋 Google Drive。"
+}

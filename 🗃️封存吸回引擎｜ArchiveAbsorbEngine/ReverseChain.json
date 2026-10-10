@@ -1,0 +1,12 @@
+{
+  "chain": [
+    "ArchiveAbsorbEngine",
+    "ArchiveThenAbsorbPolicy",
+    "BleedingStopSyncLock",
+    "⭐️唯一真相 │ SingleSourceOfTruth",
+    "🧩LKMINI",
+    "A=A"
+  ],
+  "direction": "forward_and_reverse",
+  "note": "每一步都可回推；吸回完成必須能從唯一真相追回到原始封存"
+}
