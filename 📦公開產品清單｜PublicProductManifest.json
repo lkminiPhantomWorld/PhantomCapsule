@@ -1,0 +1,22 @@
+{
+  "product": "🪞幻影膠囊｜PhantomCapsule",
+  "edition": "免費基本版",
+  "public_surface_type": "usable_free_capsule",
+  "current_loop": ["Content", "State", "Projection", "Snapshot", "Restore"],
+  "storage": "browser_localStorage",
+  "backend_required": false,
+  "future_slots": {
+    "AI_SLOT": "READY_EMPTY",
+    "PORTAL_SLOT": "READY_EMPTY"
+  },
+  "files": [
+    "README.md",
+    "🌐產品顯影.html",
+    "📜商業權利與公開邊界｜CommercialRightsAndPublicBoundary.md",
+    "🔬公開驗證摘要｜PublicVerificationSummary.json",
+    "📦公開產品清單｜PublicProductManifest.json"
+  ],
+  "internal_implementation_exposed": false,
+  "public_tools_repository": "ky46738-ops/LKMini.Public.tools",
+  "status": "完成"
+}

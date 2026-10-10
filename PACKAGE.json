@@ -1,0 +1,9 @@
+{
+  "package_name": "🪞幻影膠囊",
+  "formal_path": "🥃老K系統／🧩LKMINI／🪞幻影膠囊",
+  "rebuild_order": ["Conversation","MarkdownSeed","SVG","WebP","GIF","MP4","HTML","Excel","TSV","CSV","JSON","PDF","EmbeddedVisual","SHA256Identity","Manifest","Locator","Snapshot","ReverseChain","Package"],
+  "entry": "🌐產品顯影.html",
+  "sha256_identity": "70a7bafbe3268e5b9fe72e0d91a370746ab6df38e4638a4d070240e5810a20b3",
+  "github": {"repository":"lkminiPhantomWorld/PhantomCapsule","branch":"master"},
+  "drive_file_id": "1vlJ_YgNZWfZGrfjPPgijoVZHoeuCGtTx"
+}

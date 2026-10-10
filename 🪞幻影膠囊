@@ -1,0 +1,13 @@
+{
+  "object_type": "phantom_capsule_no_extension_body",
+  "display_name": "🪞幻影膠囊",
+  "formal_path": "🥃老K系統／🧩LKMINI／🪞幻影膠囊",
+  "root_identity": "🧩LKMINI",
+  "metadata_sha256": "6c0f6f487d8af27de4a8cee9f3fc853f0fbcf417cbd21acb56ac65c55adfcf34",
+  "protocol": "LKMINI://",
+  "axiom": "A=A",
+  "projection_identity_rule": "Projection != Identity",
+  "sha256_identity": "70a7bafbe3268e5b9fe72e0d91a370746ab6df38e4638a4d070240e5810a20b3",
+  "permanent_delete_count": 0,
+  "updated_at": "2026-08-10T17:05:07.672073+08:00"
+}
